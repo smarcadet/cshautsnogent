@@ -1,8 +1,44 @@
-<<<<<<< HEAD
 # cshautsnogent
 Conseil syndical des hauts Nogent
-=======
-# Astro Starter Kit: Basics
+
+## Arborescnce :
+
+```text
+src/
+ 
+├── components/
+│ ├── Header.astro
+│ ├── Footer.astro
+│ ├── Navigation.astro
+│
+├── layouts/
+│ └── MainLayout.astro
+│
+├── pages/
+│ ├── index.astro
+│ ├── actualites.astro
+│ ├── travaux.astro
+│ ├── incidents.astro
+│ ├── documents.astro
+│ ├── ag.astro
+│ └── contact.astro
+│
+└── content/
+├── actualites/
+├── travaux/
+├── incidents/
+└── decisions-ag/
+```
+
+## Accessibilité :
+```text
+landmarks HTML natifs ;
+liens d'évitement ;
+contraste élevé ;
+navigation clavier ;
+thème sombre natif ;
+respect systématique des critères RGAA.
+```
 
 ```sh
 npm create astro@latest -- --template basics
@@ -48,4 +84,3 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
->>>>>>> 97f295d (Initial CS project)
