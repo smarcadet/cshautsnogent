@@ -17,7 +17,7 @@ body {
     font-family: Atkinson Hyperlegible;
     color: var(--text);
     background-color: var(--background);
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 button {
@@ -42,16 +42,4 @@ button {
   top: 10px;
   left: 10px;
   outline: 3px solid #ff0;
-}
-
-.header, .footer {
-    padding-block: 2rem;
-    padding-inline: 1rem;
-    color: var(--surface);
-    background-color: var(--text);
-
-}
-
-.main {
-    padding-block: 4rem;
 }
