@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+:root {
+    --primary: #2f6e91; /* header, boutons primaires, liens */
+    --secondary: #8aa888; /* statut (terminé, positif), badges */
+    --accent: #d9815b; /* Alerte, nouveauté, CTA */
+    /* Neutral */
+    --background: #f8fafb;
+    --surface: #ffffff;
+    --border: #dfe6ea;
+    --text: #2c3e50;
+    --text-light: #5f6b76;
+    --radius: 6px;
+}
+
+body {
+    font-family: Atkinson Hyperlegible;
+    color: var(--text);
+    background-color: var(--background);
+    font-size: 1em;
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--surface);
+    padding: 1.2em;
+    border-radius: var(--radius);
+}
