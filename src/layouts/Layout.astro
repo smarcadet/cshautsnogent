@@ -15,13 +15,14 @@ const separator = title ? " | " : "";
 <html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}{separator}{siteName}</title>
 	</head>
 	<body>
+		<a href="#main-content" class="skip-link">Aller au contenu principal</a>
 		<slot />
 	</body>
 </html>

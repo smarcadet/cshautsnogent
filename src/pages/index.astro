@@ -6,21 +6,45 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="">
-<h1>Conseil Syndical</h1>
- 
-<p>
-	Bienvenue sur le site de la résidence.
-</p>
- 
-<ul>
-	<li>Dans la page d'accueil: Votre prochaine AG, etc</li>
-	<li>Actualités</li>
-	<li>Travaux</li>
-	<li>Incidents</li>
-	<li>Documents</li>
-	<li>Décision AG</li>
-	<li>Contact</li>
-</ul>
-<button>exemeple de button</button>
-<a href="contact.html">contact</a>
+	<header class="flex items-center justify-between bg-white border-cyan-800 border-be-3 px-4 py-8" role="banner">
+		<div>
+			<img src="/src/assets/identity/CS_hauts_nogent_logo.png" alt="Logo Conseil Syndical des Hauts Nogent" class="w-48" />
+		</div>
+		<ul>
+			<li>menu</li>
+		</ul>
+	</header>
+
+	<main id="main-content" role="main" class="main">
+		<div class="relative h-100 overflow-hidden">
+			<h1 class="text-6xl font-sans font-black text-white absolute inset-0 z-10 flex content-center justify-center h-full flex-wrap">Copropriété des Hauts de Nogent</h1>
+	 		<img class="absolute inset-0 w-full h-full object-cover" src="/src/assets/bat_epivans.jpeg" alt="Vue de la façade du bâtiment 2/2bis allée des Epivans" />
+		</div>
+
+		<p>
+			Ce site a pour vocation de vous informer en toute transparence sur les sujets qui concernent notre résidence : décisions votées en Assemblée Générale, les travaux en cours, les actions engagées et les principaux événements de la copropriété.
+			Notre objectif est de permettre à chaque copropriétaire de mieux comprendre les actions menées au quotidien pour préserver et améliorer notre cadre de vie.
+		</p>
+		<p>
+			Cet espace a également pour vocation de faciliter les échanges avec les copropriétaires. Vous pouvez nous signaler tout problème ou dysfonctionnement concernant les parties communes ou présentant un intérêt collectif pour la résidence. Votre retour d'expérience, qu'il concerne votre bâtiment ou les espaces communs, contribue à améliorer notre cadre de vie et à nous aider dans le suivi des dossiers de la copropriété.
+		</p>
+		<p>
+			Ensemble, contribuons à faire des Hauts de Nogent une résidence agréable, entretenue et bien informée.
+		</p>
+
+		<ul>
+			<li>Dans la page d'accueil: Votre prochaine AG, etc</li>
+			<li>Actualités</li>
+			<li>Travaux</li>
+			<li>Incidents</li>
+			<li>Documents</li>
+			<li>Décision AG</li>
+			<li>Contact</li>
+		</ul>
+
+		<button>exemeple de button</button>
+		<a href="contact.html">contact</a>
+	</main>
+
+	<footer role="contentinfo" class="footer">lien de pied de page</footer>
 </Layout>
