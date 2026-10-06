@@ -14,17 +14,10 @@
 }
 
 body {
-    font-family: Atkinson Hyperlegible;
+    font-family: "Atkinson Hyperlegible", sans-serif;
     color: var(--text);
     background-color: var(--background);
-    font-size: 1rem;
-}
-
-button {
-    background-color: var(--primary);
-    color: var(--surface);
-    padding: 1.2em;
-    border-radius: var(--radius);
+    font-size: 1.125rem;
 }
 
 .skip-link {
@@ -42,4 +35,35 @@ button {
   top: 10px;
   left: 10px;
   outline: 3px solid #ff0;
+}
+
+button {
+    background-color: var(--primary);
+    color: white;
+    padding: 1.2em;
+    border-radius: var(--radius);
+}
+
+button:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+p {
+    margin-block: 2rem;
 }

@@ -1,4 +1,19 @@
-https://api.web3forms.com/submit
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+import logo from '../assets/identity/CS_hauts_nogent_logo.png';
+import hero from '../assets/bat_epivans.jpeg';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title="">
+	<main id="main-content">
+
+
+<form action="https://api.web3forms.com/submit">
 
     <input
       type="hidden"
@@ -42,3 +57,5 @@ https://api.web3forms.com/submit
     </button>
 
 </form>
+</main>
+</Layout>

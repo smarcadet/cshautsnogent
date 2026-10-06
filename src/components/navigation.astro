@@ -1,0 +1,30 @@
+---
+import { navigation } from "../data/navigation";
+
+const baseUrl = import.meta.env.BASE_URL;
+const currentPath = Astro.url.pathname;
+---
+
+<nav>
+  <ul class="flex gap-4 flex-wrap">
+    {
+      navigation.map((link) => {
+        const href = `${baseUrl}/${link.href}`;
+        const isActive = currentPath === href;
+
+        return (
+          <li>
+            <a href={href} class={`px-4 py-2 transition-colors hover:text-orange-500 
+                ${isActive
+                ? "text-orange-700 border-b-2 border-orange-700"
+                : "text-slate-800"
+                }`}>
+
+                {link.label}
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</nav>
