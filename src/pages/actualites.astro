@@ -1,5 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from "astro:content";
+
+const actualites = await getCollection("actualites");
+
+const actualitesTriees = actualites.sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
 ---
 
-<Layout></Layout>
+<Layout>
+    <h1>Actualités</h1>
+    
+    {
+        actualitesTriees.map((article) => (
+            <article>
+                <h2>{article.data.title}</h2>
+        
+                <p>
+                    {article.data.date.toLocaleDateString("fr-FR")}
+                </p>
+        
+                <p>{article.data.excerpt}</p>
+            </article>
+        ))
+    }
+</Layout>

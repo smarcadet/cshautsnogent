@@ -4,8 +4,13 @@ import { Image } from 'astro:assets';
 
 import hero from '../assets/bat_epivans.jpeg';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import { getCollection } from "astro:content";
+
+const actualites = await getCollection("actualites");
+
+const dernieresActus = actualites
+.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+.slice(0, 3);
 ---
 
 <Layout title="">
@@ -22,7 +27,7 @@ import hero from '../assets/bat_epivans.jpeg';
 			/>
 		</section>
 
-		<section class="max-w-4xl mx-auto py-8">
+		<section class="max-w-4xl mx-auto pb-8 px-7 pt-0.5 bg-gray-50 -mt-28 z-10 relative rounded-xl">
 			<p>
 				Chers copropriétaires,<br>
 				ce site a pour vocation de vous informer en toute transparence sur les sujets qui concernent notre résidence : décisions votées en Assemblée Générale, les travaux en cours, les actions engagées et les principaux événements de la copropriété.
@@ -34,6 +39,24 @@ import hero from '../assets/bat_epivans.jpeg';
 			<p>
 				Ensemble, contribuons à faire des Hauts de Nogent une résidence agréable, entretenue et bien informée.
 			</p>
+		</section>
+
+		<section>
+			<h2 class="font-bold text-2xl">Dernières actualités</h2>
+
+			<div class="flex gap-5 flex-1 content-around">
+			{
+				dernieresActus.map((article) => (
+				<article class="border-amber-600 border-2 rounded-2xl p-4 mb-4 bg-stone-50">
+					<h3 class="font-bold">{article.data.title}</h3>
+					<p>{article.data.excerpt}</p>
+				</article>
+				))
+			}
+			</div>
+		</section>
+
+		<section>
 
 			<ul>
 				<li>Dans la page d'accueil: Votre prochaine AG, etc</li>
