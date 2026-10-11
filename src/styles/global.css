@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 :root {
-    --primary: #2C7D86; /* header, boutons primaires, liens */
-    --secondary: #72AA97; /* statut (terminé, positif), badges */
-    --accent: #BE571E; /* Alerte, nouveauté, CTA */
+    --primary: #2C7D86;
+    --secondary: #72AA97;
+    --accent: #BE571E;
+    --accent-light: #ff9e6a;
     --background: #FDD58F80;
     --surface: #FFCF73;
 }
@@ -55,7 +56,7 @@ button:focus {
 a:not(.nav-link) {
     color: var(--primary);
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 3px;
 }
 
 a:hover {
@@ -65,6 +66,16 @@ a:hover {
 a:focus {
     outline: 2px solid var(--primary);
     outline-offset: 2px;
+}
+
+.breadcrumb a {
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: none;
 }
 
 p {
@@ -116,6 +127,7 @@ h1 {
     font-size: var(--text-4xl);
     font-weight: 900;
     line-height: 1.2;
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -140,7 +152,38 @@ h3 {
 }
 
 hr {
-    margin-bottom: 40px;
-    margin-top: 40px;
-    color: var(--accent);
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border: none;
+  background-color: transparent;
+  overflow: visible;
+}
+  
+hr:before {
+    width: 51%;
+    border-bottom: 3px solid var(--accent-light);
+    border-right: 1px solid transparent;
+    border-bottom-left-radius: 15% 30px;
+    border-bottom-right-radius: 5% 10px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    box-sizing: border-box;
+}
+  
+hr:after {
+    width: 51%;
+    border-top: 3px solid var(--accent-light);
+    border-left: 1px solid transparent;
+    border-top-right-radius: 15% 30px;
+    border-top-left-radius: 5% 10px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
 }

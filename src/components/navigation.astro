@@ -15,6 +15,21 @@ const getHref = (href: string) =>
   href
     ? `${baseUrl}/${href}`
     : baseUrl;
+
+function isActiveLink(
+  currentPath: string,
+  href: string,
+  baseUrl: string
+) {
+  if (href === baseUrl) {
+    return currentPath === baseUrl;
+  }
+
+  return (
+    currentPath === href ||
+    currentPath.startsWith(`${href}/`)
+  );
+}
 ---
 
 <nav class="w-full">
@@ -25,7 +40,12 @@ const getHref = (href: string) =>
       {
         leftLinks.map((link) => {
           const href = getHref(link.href);
-          const isActive = currentPath === href;
+          const isActive = isActiveLink(
+                            currentPath,
+                            href,
+                            baseUrl
+                          );
+  
 
           return (
             <li>
@@ -56,7 +76,11 @@ const getHref = (href: string) =>
       {
         rightLinks.map((link) => {
           const href = getHref(link.href);
-          const isActive = currentPath === href;
+          const isActive = isActiveLink(
+                            currentPath,
+                            href,
+                            baseUrl
+                          );
 
           return (
             <li>

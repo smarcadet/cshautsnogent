@@ -20,20 +20,20 @@ const breadcrumbs = segments.map((segment, index) => ({
 }));
 ---
 
-<nav aria-label="Fil d'Ariane" class="max-w-5xl mx-auto text-base relative top-5">
-  <ol class="flex gap-2 bg-(--secondary) py-1.5 px-3 rounded-sm ml-6 mr-24 text-white">
+<nav aria-label="Fil d'Ariane" class="max-w-5xl mx-auto text-base relative top-3">
+  <ol class="breadcrumb flex gap-2 bg-(--secondary) py-2 pl-4 pr-34 rounded-lg mx-6 text-black">
     <li>
-      <a href={baseUrl} class="nav-link hover:underline">
+      <a href={baseUrl}>
         Accueil
       </a>
     </li>
     {
       breadcrumbs.map((item) => (
         <>
-            <li aria-hidden="true" class="text-2xl leading-6">›</li>
+            <li aria-hidden="true" class="text-2xl leading-5">›</li>
 
             <li>
-                <a href={item.href} class="nav-link hover:underline">
+                <a href={item.href}>
                     {item.label}
                 </a>
             </li>
