@@ -23,13 +23,11 @@ const { Content } = await render(article);
 
 <Layout title={article.data.title}>
     <Main>
-        <article class="articles">
+        <article class="articles relative">
+
+            <p class="absolute -right-3.5 -top-23 min-w-max bg-(--accent) text-white px-3.5 py-1.5 rounded-sm">Le <strong>{article.data.date.toLocaleDateString("fr-FR")}</strong></p>
 
             <h1>{article.data.title}</h1>
-
-            <p>
-            {article.data.date.toLocaleDateString("fr-FR")}
-            </p>
 
             <Content />
 

@@ -3,7 +3,7 @@
 :root {
     --primary: #2C7D86; /* header, boutons primaires, liens */
     --secondary: #72AA97; /* statut (terminé, positif), badges */
-    --accent: #CB6228; /* Alerte, nouveauté, CTA */
+    --accent: #BE571E; /* Alerte, nouveauté, CTA */
     --background: #FDD58F80;
     --surface: #FFCF73;
 }
@@ -20,6 +20,7 @@ body {
     color: black;
     background-color: var(--background);
     font-size: 1.125rem;
+    line-height: 1.5;
 }
 
 .skip-link {
@@ -114,11 +115,13 @@ p {
 h1 {
     font-size: var(--text-4xl);
     font-weight: 900;
+    line-height: 1.2;
 }
 
 h2 {
     font-size: var(--text-2xl);
     font-weight: 700;
+    line-height: 1.2;
 }
 
 h3 {
@@ -130,6 +133,10 @@ h3 {
     list-style-type: disc;
     padding-left: 30px;
     padding-bottom: 30px;
+}
+
+.articles h1 {
+    color: var(--primary);
 }
 
 hr {
