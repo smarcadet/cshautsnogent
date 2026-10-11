@@ -2,6 +2,7 @@
 import '../styles/global.css';
 
 import Header from '../components/header.astro';
+import Breadcrumb from '../components/breadcrumb.astro';
 
 interface Props {
 	title?: string;
@@ -30,6 +31,7 @@ const separator = title ? " | " : "";
 	<body>
 		<a href="#main-content" class="skip-link">Aller au contenu principal</a>
 		<Header isHome={isHome}/>
+		{!isHome && <Breadcrumb />}
 		<slot />
 	</body>
 	<footer class="flex items-center justify-between bg-black/80 px-4 py-8 text-white" class="footer">

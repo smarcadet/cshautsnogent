@@ -1,0 +1,44 @@
+---
+const pathname = Astro.url.pathname;
+
+const baseUrl = import.meta.env.BASE_URL;
+const baseSegment = baseUrl.replace(/^\/|\/$/g, "");
+
+const segments = pathname
+  .split("/")
+  .filter(Boolean)
+  .filter(segment => segment !== baseSegment);
+
+const breadcrumbs = segments.map((segment, index) => ({
+  label: segment
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, c => c.toUpperCase()),
+  href:
+    `${baseUrl}/${segments
+      .slice(0, index + 1)
+      .join("/")}`,
+}));
+---
+
+<nav aria-label="Fil d'Ariane">
+  <ol class="flex gap-2">
+    <li>
+      <a href={baseUrl}>
+        Accueil
+      </a>
+    </li>
+    {
+      breadcrumbs.map((item) => (
+        <>
+            <li aria-hidden="true">›</li>
+
+            <li>
+                <a href={item.href}>
+                    {item.label}
+                </a>
+            </li>
+        </>
+      ))
+    }
+  </ol>
+</nav>
