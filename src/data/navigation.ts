@@ -4,15 +4,23 @@ export const navigation = [
     href: "actualites",
   },
   {
-    label: "Contact",
-    href: "contact",
-  },
-  {
-    label: "Suivi des travaux",
+    label: "Travaux en cours",
     href: "suivi-des-travaux",
   },
   {
-    label: "Suivi des incidents",
+    label: "Nous contacter",
+    href: "contact",
+  },
+  {
+    label: "Documents",
+    href: "suivi-des-incidents",
+  },
+  {
+    label: "Conseil syndical",
+    href: "contact",
+  },
+  {
+    label: "Numéros d'urgence",
     href: "suivi-des-incidents",
   }
 ];

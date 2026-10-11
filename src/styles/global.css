@@ -1,16 +1,11 @@
 @import "tailwindcss";
 
 :root {
-    --primary: #2f6e91; /* header, boutons primaires, liens */
-    --secondary: #8aa888; /* statut (terminé, positif), badges */
-    --accent: #d9815b; /* Alerte, nouveauté, CTA */
-    /* Neutral */
-    --background: #f8fafb;
-    --surface: #ffffff;
-    --border: #dfe6ea;
-    --text: #2c3e50;
-    --text-light: #5f6b76;
-    --radius: 6px;
+    --primary: #2C7D86; /* header, boutons primaires, liens */
+    --secondary: #72AA97; /* statut (terminé, positif), badges */
+    --accent: #CB6228; /* Alerte, nouveauté, CTA */
+    --background: #FDD58F80;
+    --surface: #FFCF73;
 }
 
 html,
@@ -22,7 +17,7 @@ body {
 
 body {
     font-family: "Atkinson Hyperlegible", sans-serif;
-    color: var(--text);
+    color: black;
     background-color: var(--background);
     font-size: 1.125rem;
 }
@@ -48,7 +43,7 @@ button {
     background-color: var(--primary);
     color: white;
     padding: 1.2em;
-    border-radius: var(--radius);
+    border-radius: var(--radius-lg);
 }
 
 button:focus {
@@ -73,4 +68,45 @@ a:focus {
 
 p {
     margin-block: 2rem;
+}
+
+.tooltip-container {
+    position: relative;
+}
+
+.tooltip {
+    display: none;
+    color: black;
+    font-size: 1rem;
+    position: absolute;
+    background-color: white;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .5);
+    width: max-content;
+    padding-inline: 10px;
+    padding-block: 5px;
+    border-radius: var(--radius-lg);
+}
+
+.tooltip.topleft {
+    bottom: 90%;
+    right: 90%;
+}
+
+.tooltip.topright {
+    bottom: 90%;
+    left: 90%;
+}
+
+.tooltip.bottomright {
+    top: 90%;
+    left: 90%;
+}
+
+.tooltip.bottomleft {
+    top: 90%;
+    right: 90%;
+}
+
+.tooltip-container:hover .tooltip {
+    display: block;
 }

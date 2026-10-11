@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Content from '../layouts/Content.astro';
 import { Image } from 'astro:assets';
 
 import hero from '../assets/bat_epivans.jpeg';
@@ -15,62 +16,69 @@ const dernieresActus = actualites
 
 <Layout title="Accueil" isHome={true}>
 	<main id="main-content">
-		<section class="relative h-140 overflow-hidden">
-			<h1 class="text-6xl font-sans font-black text-white bg-black/50 absolute inset-0 z-10 flex content-center justify-center h-full flex-wrap">Copropriété des Hauts de Nogent</h1>
+		<section class="relative h-130 overflow-hidden">
+			<div class="text-white bg-black/55 absolute inset-0 z-10 flex content-center justify-center h-full flex-wrap">
+				<div class="text-center pt-10">
+					<h1 class="text-6xl font-sans font-black">Copropriété des Hauts Nogent</h1>
+					<p class="text-2xl">Ensemble pour une résidence agréable à vivre</p>
+				</div>
+			</div>
 			<Image
-			src={hero}
-			alt="Vue de la façade du bâtiment 2/2bis allée des Epivans"
-			class="absolute inset-0 w-full h-full object-cover"
-			loading="eager"
-			widths={[640, 1024, 1440]}
-			sizes="100vw"
+				src={hero}
+				alt="Vue de la façade du bâtiment 2/2bis allée des Epivans"
+				class="absolute inset-0 w-full h-full object-cover"
+				loading="eager"
+				widths={[640, 1024, 1440]}
+				sizes="100vw"
 			/>
 		</section>
 
-		<section class="max-w-4xl mx-auto pb-8 px-7 pt-0.5 bg-gray-50 -mt-28 z-10 relative rounded-xl">
-			<p>
-				Chers copropriétaires,<br>
-				ce site a pour vocation de vous informer en toute transparence sur les sujets qui concernent notre résidence : décisions votées en Assemblée Générale, les travaux en cours, les actions engagées et les principaux événements de la copropriété.
-				Notre objectif est de permettre à chaque copropriétaire de mieux comprendre les actions menées au quotidien pour préserver et améliorer notre cadre de vie.
-			</p>
-			<p>
-				Cet espace a également pour vocation de faciliter les échanges avec les copropriétaires. Vous pouvez nous signaler tout problème ou dysfonctionnement concernant les parties communes ou présentant un intérêt collectif pour la résidence. Votre retour d'expérience, qu'il concerne votre bâtiment ou les espaces communs, contribue à améliorer notre cadre de vie et à nous aider dans le suivi des dossiers de la copropriété.
-			</p>
-			<p>
-				Ensemble, contribuons à faire des Hauts de Nogent une résidence agréable, entretenue et bien informée.
-			</p>
-		</section>
+		<Content>
+			<section>
+				<p>
+					<strong>Chers copropriétaires,</strong><br><br>
+					ce site a pour vocation de vous informer en toute transparence sur les sujets qui concernent notre résidence : décisions votées en Assemblée Générale, les travaux en cours, les actions engagées et les principaux événements de la copropriété.
+					Notre objectif est de permettre à chaque copropriétaire de mieux comprendre les actions menées au quotidien pour préserver et améliorer notre cadre de vie.
+				</p>
+				<p>
+					Cet espace a également pour vocation de faciliter les échanges avec les copropriétaires. Vous pouvez nous signaler tout problème ou dysfonctionnement concernant les parties communes ou présentant un intérêt collectif pour la résidence. Votre retour d'expérience, qu'il concerne votre bâtiment ou les espaces communs, contribue à améliorer notre cadre de vie et à nous aider dans le suivi des dossiers de la copropriété.
+				</p>
+				<p>
+					Ensemble, contribuons à faire des Hauts de Nogent une résidence agréable, entretenue et bien informée.
+				</p>
+			</section>
 
-		<section>
-			<h2 class="font-bold text-2xl">Dernières actualités</h2>
+			<section>
+				<h2 class="font-bold text-2xl">Dernières actualités</h2>
 
-			<div class="flex gap-5 flex-1 content-around">
-			{
-				dernieresActus.map((article) => (
-				<article class="border-amber-600 border-2 rounded-2xl p-4 mb-4 bg-stone-50">
-					<h3 class="font-bold">{article.data.title}</h3>
-					<p>{article.data.excerpt}</p>
-				</article>
-				))
-			}
-			</div>
-		</section>
+				<div class="flex gap-5 flex-1 content-around">
+				{
+					dernieresActus.map((article) => (
+					<article class="border-amber-600 border-2 rounded-2xl p-4 mb-4 bg-stone-50">
+						<h3 class="font-bold">{article.data.title}</h3>
+						<p>{article.data.excerpt}</p>
+					</article>
+					))
+				}
+				</div>
+			</section>
 
-		<section>
+			<section>
 
-			<ul>
-				<li>Dans la page d'accueil: Votre prochaine AG, etc</li>
-				<li>Actualités</li>
-				<li>Travaux</li>
-				<li>Incidents</li>
-				<li>Documents</li>
-				<li>Décision AG</li>
-				<li>Contact</li>
-			</ul>
+				<ul>
+					<li>Dans la page d'accueil: Votre prochaine AG, etc</li>
+					<li>Actualités</li>
+					<li>Travaux</li>
+					<li>Incidents</li>
+					<li>Documents</li>
+					<li>Décision AG</li>
+					<li>Contact</li>
+				</ul>
 
-			<button>Exemple de bouton</button><br>
-			<a href="cshautsnogent/contact.html">Exemple de lien</a>
-		</section>
+				<button>Exemple de bouton</button><br>
+				<a href="cshautsnogent/contact.html">Exemple de lien</a>
+			</section>
+		</Content>
 	</main>
 
 	<footer class="flex items-center justify-between bg-(--text) border-be-3 px-4 py-8 text-white" class="footer">
