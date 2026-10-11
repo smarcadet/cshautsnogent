@@ -1,26 +1,101 @@
 ---
 import { navigation } from "../data/navigation";
+import { Image } from "astro:assets";
 
+import logo from "../assets/identity/CS_hauts_nogent_small.png";
+
+const { isHome = false } = Astro.props;
 const baseUrl = import.meta.env.BASE_URL;
 const currentPath = Astro.url.pathname;
+
+const leftLinks = navigation.slice(0, 2);
+const rightLinks = navigation.slice(2);
+
+const getHref = (href: string) =>
+  href
+    ? `${baseUrl}/${href}`
+    : baseUrl;
 ---
 
-<nav>
+<nav class="w-full">
+  <div class:list={[
+    "grid grid-cols-[1fr_auto_1fr] before:inset-0 before:block before:-z-1 before:h-20",
+    isHome ? "before:absolute before:bg-black/40" : "relative bg-white"]}>
+    <ul class="flex justify-end gap-8">
+      {
+        leftLinks.map((link) => {
+          const href = getHref(link.href);
+          const isActive = currentPath === href;
+
+          return (
+            <li>
+              <a href={href}
+                class:list={[
+                  "nav-link block px-4 py-4 transition-colors hover:text-(--accent) font-bold",
+                  isActive ? "text-(--accent) border-b-3" : "text-white",
+                ]}>
+
+                {link.label}
+
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+
+    <a href={baseUrl} aria-label="Retour l'accueil" class="flex justify-center py-1 px-5 bg-[#e6eaeb] rounded-b-xl">
+        <Image src={logo} alt="Logo du Conseil Syndical des Hauts de Nogent" class="w-52" loading="eager" />
+    </a>
+
+    <ul class="flex justify-start gap-8">
+      {
+        rightLinks.map((link) => {
+          const href = getHref(link.href);
+          const isActive = currentPath === href;
+
+          return (
+            <li>
+              <a href={href}
+                class:list={[
+                  "nav-link block px-4 py-4 transition-colors hover:text-(--accent) font-bold",
+                  isActive ? "text-(--accent) border-b-3" : "text-white",
+                ]}>
+
+                {link.label}
+
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+</nav>
+
+<!-- 
+<nav class="flex justify-center mr-4">
   <ul class="flex gap-4 flex-wrap">
     {
       navigation.map((link) => {
         const href = `${baseUrl}/${link.href}`;
         const isActive = currentPath === href;
+        const isLogo = link.logo;
 
         return (
-          <li>
-            <a href={href} class={`px-4 py-2 transition-colors hover:text-orange-500 
+          <li class="nth-[2]:mr-80">
+            <a href={href} class={`nav-link block px-4 py-4 transition-colors hover:text-(--accent) font-bold 
                 ${isActive
-                ? "text-orange-700 border-b-2 border-orange-700"
-                : "text-slate-800"
+                ? "text-(--accent) border-b-3"
+                : "text-white"
                 }`}>
 
-                {link.label}
+                {
+                  isLogo
+                    ? <Image src={logo} alt="Logo du Conseil Syndical des Hauts de Nogent" class="w-52" loading="eager" />
+                    : {link.label}
+                }
+               
             </a>
           </li>
         );
@@ -28,3 +103,9 @@ const currentPath = Astro.url.pathname;
     }
   </ul>
 </nav>
+
+<a href={baseUrl} aria-label="Retour l'accueil" class="block py-1 px-5 bg-[#e6eaeb] rounded-b-xl absolute left-1/2 -translate-x-1/2 top-0">
+        <Image src={logo} alt="Logo du Conseil Syndical des Hauts de Nogent" class="w-52" loading="eager" />
+    </a>
+
+    -->

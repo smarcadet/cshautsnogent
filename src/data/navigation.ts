@@ -4,15 +4,15 @@ export const navigation = [
     href: "actualites",
   },
   {
-    label: "Suivi des incidents",
-    href: "suivi-des-incidents",
+    label: "Contact",
+    href: "contact",
   },
   {
     label: "Suivi des travaux",
     href: "suivi-des-travaux",
   },
   {
-    label: "Contact",
-    href: "contact",
+    label: "Suivi des incidents",
+    href: "suivi-des-incidents",
   }
 ];
