@@ -5,7 +5,7 @@ export const navigation = [
   },
   {
     label: "Travaux en cours",
-    href: "suivi-des-travaux",
+    href: "travaux",
   },
   {
     label: "Nous contacter",
@@ -13,14 +13,14 @@ export const navigation = [
   },
   {
     label: "Documents",
-    href: "suivi-des-incidents",
+    href: "documents",
   },
   {
     label: "Conseil syndical",
-    href: "contact",
+    href: "etat-des-decisions",
   },
   {
     label: "Numéros d'urgence",
-    href: "suivi-des-incidents",
+    href: "incidents",
   }
 ];

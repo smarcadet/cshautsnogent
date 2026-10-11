@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Main from '../layouts/Main.astro';
 import { getCollection } from "astro:content";
+const baseUrl = import.meta.env.BASE_URL;
 
 const actualites = await getCollection("actualites");
 
@@ -10,19 +12,25 @@ const actualitesTriees = actualites.sort(
 ---
 
 <Layout title='Actualités'>
-    <h1>Actualités</h1>
-    
-    {
-        actualitesTriees.map((article) => (
-            <article>
-                <h2>{article.data.title}</h2>
+    <Main>
+        <h1>Actualités</h1>
         
-                <p>
-                    {article.data.date.toLocaleDateString("fr-FR")}
-                </p>
-        
-                <p>{article.data.excerpt}</p>
-            </article>
-        ))
-    }
+        {
+            actualitesTriees.map((article) => (
+                <article>
+                    <h2>
+                        <a href={`${baseUrl}/actualites/${article.id}`}>
+                            {article.data.title}
+                        </a>
+                    </h2>
+            
+                    <p>
+                        {article.data.date.toLocaleDateString("fr-FR")}
+                    </p>
+            
+                    <p>{article.data.excerpt}</p>
+                </article>
+            ))
+        }
+    </Main>
 </Layout>

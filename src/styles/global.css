@@ -110,3 +110,29 @@ p {
 .tooltip-container:hover .tooltip {
     display: block;
 }
+
+h1 {
+    font-size: var(--text-4xl);
+    font-weight: 900;
+}
+
+h2 {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: var(--text-xl);
+    font-weight: 700;
+}
+
+.article ul {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+hr {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: var(--accent);
+}

@@ -1,12 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Content from '../layouts/Content.astro';
+import Main from '../layouts/Main.astro';
 import { Image } from 'astro:assets';
 
 import hero from '../assets/bat_epivans.jpeg';
 
 import { getCollection } from "astro:content";
 
+const baseUrl = import.meta.env.BASE_URL;
 const actualites = await getCollection("actualites");
 
 const dernieresActus = actualites
@@ -33,7 +34,7 @@ const dernieresActus = actualites
 			/>
 		</section>
 
-		<Content>
+		<Main isHome={true}>
 			<section>
 				<p>
 					<strong>Chers copropriétaires,</strong><br><br>
@@ -48,42 +49,26 @@ const dernieresActus = actualites
 				</p>
 			</section>
 
-			<section>
-				<h2 class="font-bold text-2xl">Dernières actualités</h2>
+			<hr>
 
-				<div class="flex gap-5 flex-1 content-around">
+			<section>
+				<h2 class="mb-5">Dernières actualités</h2>
+
+				<div class="flex flex-wrap gap-5 flex-1">
 				{
 					dernieresActus.map((article) => (
-					<article class="border-amber-600 border-2 rounded-2xl p-4 mb-4 bg-stone-50">
-						<h3 class="font-bold">{article.data.title}</h3>
+					<article class="rounded-xl px-8 py-6 mb-4 bg-stone-50">
+						<h3 class="font-bold">
+							<a href={`${baseUrl}/actualites/${article.id}`}>
+								{article.data.title}
+							</a>
+						</h3>
 						<p>{article.data.excerpt}</p>
 					</article>
 					))
 				}
 				</div>
 			</section>
-
-			<section>
-
-				<ul>
-					<li>Dans la page d'accueil: Votre prochaine AG, etc</li>
-					<li>Actualités</li>
-					<li>Travaux</li>
-					<li>Incidents</li>
-					<li>Documents</li>
-					<li>Décision AG</li>
-					<li>Contact</li>
-				</ul>
-
-				<button>Exemple de bouton</button><br>
-				<a href="cshautsnogent/contact.html">Exemple de lien</a>
-			</section>
-		</Content>
+		</Main>
 	</main>
-
-	<footer class="flex items-center justify-between bg-(--text) border-be-3 px-4 py-8 text-white" class="footer">
-		<ul>
-			<li>Liens de pied de page</li>
-		</ul>
-	</footer>
 </Layout>

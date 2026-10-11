@@ -19,8 +19,8 @@ const getHref = (href: string) =>
 
 <nav class="w-full">
   <div class:list={[
-    "grid grid-cols-[1fr_auto_1fr] before:inset-0 before:block before:-z-1 before:h-28 items-center",
-    isHome ? "before:absolute before:bg-black/40" : "relative bg-white"]}>
+    "grid grid-cols-[1fr_auto_1fr] before:inset-0 before:block before:-z-1 before:h-28 items-center before:absolute",
+    isHome ? "before:bg-black/40" : "before:bg-black/80"]}>
     <ul class="flex justify-end gap-6 mb-9">
       {
         leftLinks.map((link) => {
@@ -44,7 +44,7 @@ const getHref = (href: string) =>
       }
     </ul>
 
-    <a href={baseUrl} aria-label="Retour à l'accueil" aria-describedby="tooltip-accueil" class="flex justify-center py-0.5 px-2.5 bg-white rounded-xl mx-6 mt-4 tooltip-container">
+    <a href={baseUrl} aria-label="Retour à l'accueil" aria-describedby="tooltip-accueil" class="flex justify-center py-0.5 px-2.5 bg-white rounded-xl mx-6 mt-4 tooltip-container shadow-xl">
         <Image src={logo} alt="Logo du Conseil Syndical des Hauts de Nogent" class="w-30" loading="eager" />
 
         <div id="tooltip-accueil" role="tooltip" class="tooltip bottomleft">
