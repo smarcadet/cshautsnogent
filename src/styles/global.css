@@ -126,9 +126,10 @@ h3 {
     font-weight: 700;
 }
 
-.article ul {
+.articles ul {
     list-style-type: disc;
     padding-left: 30px;
+    padding-bottom: 30px;
 }
 
 hr {
