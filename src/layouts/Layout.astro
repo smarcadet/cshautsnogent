@@ -2,6 +2,7 @@
 import '../styles/global.css';
 
 import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
 import Breadcrumb from '../components/breadcrumb.astro';
 
 interface Props {
@@ -34,11 +35,5 @@ const separator = title ? " | " : "";
 		{!isHome && <Breadcrumb />}
 		<slot />
 	</body>
-	<footer class="flex items-center justify-between bg-black/80 px-4 py-8 text-white" class="footer">
-		<ul class="list-none">
-			<li>Liens de pied de page</li>
-			<li>Liens de pied de page</li>
-			<li>Liens de pied de page</li>
-		</ul>
-	</footer>
+	<Footer />
 </html>

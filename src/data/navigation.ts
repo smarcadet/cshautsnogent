@@ -9,7 +9,7 @@ export const navigation = [
   },
   {
     label: "Nous contacter",
-    href: "contact",
+    href: "nous-contacter",
   },
   {
     label: "Documents",

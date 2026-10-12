@@ -20,8 +20,8 @@ const dernieresActus = actualites
 		<section class="relative h-130 overflow-hidden">
 			<div class="text-white bg-black/55 absolute inset-0 z-10 flex content-center justify-center h-full flex-wrap">
 				<div class="text-center pt-10">
-					<h1 class="text-6xl font-sans font-black">Copropriété des Hauts Nogent</h1>
-					<p class="text-2xl">Ensemble pour une résidence agréable à vivre</p>
+					<h1 class="text-6xl font-sans font-black text-shadow-sm text-shadow-black">Copropriété des Hauts Nogent</h1>
+					<p class="text-2xl text-shadow-sm text-shadow-black">Ensemble pour une résidence agréable à vivre</p>
 				</div>
 			</div>
 			<Image
@@ -42,10 +42,7 @@ const dernieresActus = actualites
 					Notre objectif est de permettre à chaque copropriétaire de mieux comprendre les actions menées au quotidien pour préserver et améliorer notre cadre de vie.
 				</p>
 				<p>
-					Cet espace a également pour vocation de faciliter les échanges avec les copropriétaires. Vous pouvez nous signaler tout problème ou dysfonctionnement concernant les parties communes ou présentant un intérêt collectif pour la résidence. Votre retour d'expérience, qu'il concerne votre bâtiment ou les espaces communs, contribue à améliorer notre cadre de vie et à nous aider dans le suivi des dossiers de la copropriété.
-				</p>
-				<p>
-					Ensemble, contribuons à faire des Hauts de Nogent une résidence agréable, entretenue et bien informée.
+					Sur ce site, vous pouvez, via la page <a href={`${baseUrl}/nous-contacter`}>nous contacter</a>, nous signaler tout problème ou dysfonctionnement concernant les parties communes ou présentant un intérêt collectif pour la résidence. Votre retour d'expérience, qu'il concerne votre bâtiment ou les espaces communs, contribue à nous aider dans le suivi des dossiers de la copropriété. N'hésitez pas à vous en servir.
 				</p>
 			</section>
 
@@ -57,7 +54,7 @@ const dernieresActus = actualites
 				<div class="flex flex-wrap gap-5 flex-1">
 				{
 					dernieresActus.map((article) => (
-					<article class="rounded-xl px-8 py-6 mb-4 bg-stone-50">
+					<article class="rounded-lg px-8 py-6 mb-4 border-(--secondary) border-2">
 						<h3 class="font-bold">
 							<a href={`${baseUrl}/actualites/${article.id}`}>
 								{article.data.title}
