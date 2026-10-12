@@ -20,6 +20,9 @@ body {
     font-family: "Atkinson Hyperlegible", sans-serif;
     color: black;
     background-color: var(--background);
+    background-image: radial-gradient(#00000033 1px, transparent 1px);
+    background-size: 16px 16px;
+    background-repeat: repeat;
     font-size: 1.125rem;
     line-height: 1.5;
 }
