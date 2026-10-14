@@ -42,19 +42,20 @@ const dernieresActus = actualites
 					Notre objectif est de permettre à chaque copropriétaire de mieux comprendre les actions menées au quotidien pour préserver et améliorer notre cadre de vie.
 				</p>
 				<p>
-					Sur ce site, vous pouvez, via la page <a href={`${baseUrl}/nous-contacter`}>nous contacter</a>, nous signaler tout problème ou dysfonctionnement concernant les parties communes ou présentant un intérêt collectif pour la résidence. Votre retour d'expérience, qu'il concerne votre bâtiment ou les espaces communs, contribue à nous aider dans le suivi des dossiers de la copropriété. N'hésitez pas à vous en servir.
+					Sur ce site, vous pouvez, via la page <a href={`${baseUrl}/nous-contacter`}>nous contacter</a>, nous signaler tout problème ou dysfonctionnement concernant les parties communes ou présentant un intérêt collectif pour la résidence. Votre retour d'expérience, qu'il concerne votre bâtiment ou les espaces communs, contribue à nous aider dans le suivi des dossiers de la copropriété.<br>
+					&rarr; N'hésitez pas à vous en servir.
 				</p>
 			</section>
 
 			<hr>
 
 			<section>
-				<h2 class="mb-5">Dernières actualités</h2>
+				<h2 class="mb-5">Les dernières actualités</h2>
 
-				<div class="flex flex-wrap gap-5 flex-1">
+				<div class="flex flex-wrap gap-5">
 				{
 					dernieresActus.map((article) => (
-					<article class="rounded-lg px-8 py-6 mb-4 border-(--secondary) border-2">
+					<article class="rounded-lg px-8 py-6 mb-4 border-(--secondary) border-2 flex-1 first-of-type:basis-full [&>p]:line-clamp-4 [&:first-of-type>p]:line-clamp-none">
 						<h3 class="font-bold">
 							<a href={`${baseUrl}/actualites/${article.id}`}>
 								{article.data.title}
@@ -66,6 +67,20 @@ const dernieresActus = actualites
 				}
 				</div>
 			</section>
+
+			<hr>
+
+			<section>
+				<h2>Le chantier du moment</h2>
+				<a href={`${baseUrl}/travaux/`}>&rarr; Voir tous les travaux</a>
+			</section>
+
+			<hr>
+
+			<section>
+				<h2>État d'avancement des dossiers</h2>
+				<a href={`${baseUrl}/suivi-des-dossiers/`}>&rarr; Voir tous les dossiers</a>
+			</section> 
 		</Main>
 	</main>
 </Layout>

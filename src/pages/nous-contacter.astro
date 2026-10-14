@@ -9,7 +9,7 @@ import Main from '../layouts/Main.astro';
 
 <form action="https://api.web3forms.com/submit">
 
-  <iframe width="640px" height="480px" src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAbO7PVNUMVlFR0ExNldZN0NMMVFGWUpZS0hEUjQ0NC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh"></iframe>
+    <p>Tous les champs sont obligatoires</p>
 
     <input
       type="hidden"
@@ -23,7 +23,19 @@ import Main from '../layouts/Main.astro';
 
     <input
       id="nom"
+      name="first_name"
+      type="text"
+      required
+    />
+
+    <label for="prenom">
+        Prénom
+    </label>
+
+    <input
+      id="prenom"
       name="name"
+      type="text"
       required
     />
 
@@ -35,6 +47,7 @@ import Main from '../layouts/Main.astro';
       id="email"
       type="email"
       name="email"
+      type="email"
       required
     />
 

@@ -4,23 +4,15 @@ export const navigation = [
     href: "actualites",
   },
   {
-    label: "Travaux en cours",
-    href: "travaux",
+    label: "Suivi des dossiers",
+    href: "suivi-des-dossiers",
+  },
+   {
+    label: "Décisions AG",
+    href: "decisions-ag",
   },
   {
     label: "Nous contacter",
     href: "nous-contacter",
-  },
-  {
-    label: "Documents",
-    href: "documents",
-  },
-  {
-    label: "Conseil syndical",
-    href: "etat-des-decisions",
-  },
-  {
-    label: "Numéros d'urgence",
-    href: "incidents",
   }
 ];

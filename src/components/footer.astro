@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../assets/identity/CS_hauts_nogent.jpg";
+import logo from "../assets/identity/CP_hauts_nogent.jpg";
 
 const baseUrl = import.meta.env.BASE_URL;
 ---
@@ -13,8 +13,9 @@ const baseUrl = import.meta.env.BASE_URL;
           Retour à l'accueil
         </div>
     </a>
-    <ul class="list-none flex items-center gap-6 mr-5">
-        <li class="before:content-['|'] before:mr-5"><a class="nav-link" href={`${baseUrl}/nous-contacter`}>Nous contacter</a></li>
+    <ul class="list-none flex items-center gap-6 mr-5 text-base">
+        <li class="before:mr-5"><a class="nav-link" href={`${baseUrl}/conseil-syndical`}>Le conseil syndical</a></li>
+        <li class="before:content-['|'] before:mr-5"><a class="nav-link" href={`${baseUrl}/documents`}>Documents utiles</a></li>
         <li class="before:content-['|'] before:mr-5">Accessibilité : partiellement conforme</li>
         <li class="before:content-['|'] before:mr-5"><span>Copyright</span> 2026</li>
     </ul>
