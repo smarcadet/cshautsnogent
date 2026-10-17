@@ -1,6 +1,6 @@
 ---
 title: "Façades, fissures et parements de pierre : où en est le dossier ?"
-date: 2026-10-14
+date: 2026-09-05
 published: true
 excerpt: "Plusieurs copropriétaires nous ont signalé ces derniers mois des fissures, des infiltrations et des désordres visibles sur certaines façades et balcons de la résidence, notamment au niveau du bâtiment 2/2 bis allée des Épivans ainsi qu'au 147 boulevard de Strasbourg. Face à ces signalements et aux inquiétudes légitimes qu'ils suscitent, le Conseil Syndical a demandé au syndic d'obtenir un avis technique approfondi afin d'évaluer précisément la situation et les actions à entreprendre."
 status: sujet

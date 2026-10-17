@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Main from '../layouts/Main.astro';
 import { Image } from 'astro:assets';
+import ProgressTracker from '../components/progress-tracker.astro';
 
 import hero from '../assets/bat_epivans.jpeg';
 
@@ -19,15 +20,8 @@ const travaux = await getCollection(
   ({ data }) => data.published
 );
 
-const dernierTravail = travaux
+const currentWork = travaux
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())[0];
-
-import {
-  steps,
-  statusLabels,
-  getStepState,
-  statusIcons
-} from "../utils/travaux";
 ---
 
 <Layout title="Accueil" isHome={true}>
@@ -87,43 +81,21 @@ import {
 
 			<section>
 
-				<h2 class="mb-5">Le chantier du moment</h2>
+				<h2 class="mb-5">Le chantier à la une</h2>
 
 				<h3>
-					<a href={`${baseUrl}/travaux/${dernierTravail.id}`}>
-						{dernierTravail.data.title}
+					<a href={`${baseUrl}/suivi-des-travaux/${currentWork.id}`}>
+						{currentWork.data.title}
 					</a>
 				</h3>
 
-				<div class="progress-tracker">
+				<ProgressTracker
+					status={currentWork.data.status}
+					blocked={currentWork.data.blocked}
+					showProgress={currentWork.data.showProgress}
+				/>
 
-				{
-					steps.map((step) => {
-
-					const state =
-						getStepState(dernierTravail.data.status, step);
-
-					return (
-
-						<div class={`progress-step ${state}`}>
-
-						<div class="progress-icon">
-							{statusIcons[state]}
-						</div>
-
-						<div class="progress-label">
-							{statusLabels[step]}
-						</div>
-
-						</div>
-
-					);
-					})
-				}
-
-				</div>
-
-				<p>{dernierTravail.data.excerpt}</p>
+				<p>{currentWork.data.excerpt}</p>
 
 				<div class="flex justify-end"><a href={`${baseUrl}/suivi-des-travaux/`}>&rarr; Voir tous les travaux</a></div>
 

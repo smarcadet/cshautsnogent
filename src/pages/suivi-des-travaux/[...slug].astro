@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Main from '../../layouts/Main.astro';
 import { getCollection, render } from "astro:content";
+import ProgressTracker from '../../components/progress-tracker.astro';
 
 export async function getStaticPaths() {
   const travaux = await getCollection("travaux");
@@ -19,15 +20,6 @@ export async function getStaticPaths() {
 const { chantier } = Astro.props;
 
 const { Content } = await render(chantier);
-
-import {
-  steps,
-  statusLabels,
-  getStepState,
-  statusIcons
-} from "../../utils/travaux";
-
-const travaux = await getCollection("travaux");
 ---
 
 <Layout title={chantier.data.title}>
@@ -42,35 +34,11 @@ const travaux = await getCollection("travaux");
                 {chantier.data.title}
             </h1>
 
-            { chantier.data.showProgress && (
-                <div class="progress-tracker">
-
-                {
-                    steps.map((step) => {
-
-                    const state =
-                        getStepState(chantier.data.status, step);
-
-                    return (
-
-                        <div class={`progress-step ${state}`}>
-
-                        <div class="progress-icon">
-                            {statusIcons[state]}
-                        </div>
-
-                        <div class="progress-label">
-                            {statusLabels[step]}
-                        </div>
-
-                        </div>
-
-                    );
-                    })
-                }
-
-                </div>
-            )}
+            <ProgressTracker
+                status={chantier.data.status}
+                blocked={chantier.data.blocked}
+                showProgress={chantier.data.showProgress}
+            />
 
             <Content />
 

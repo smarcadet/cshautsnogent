@@ -35,7 +35,7 @@ export const statusIcons = {
   current: "●",
   blocked: "⛔",
   pending: "○",
-} as const;
+}
 
 /**
  * Etat visuel d'une étape

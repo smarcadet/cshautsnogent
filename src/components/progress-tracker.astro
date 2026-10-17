@@ -1,0 +1,62 @@
+---
+import {
+    steps,
+    statusLabels,
+    getStepState,
+    statusIcons,
+} from "../utils/travaux";
+
+interface Props {
+    status: any;
+    blocked?: boolean;
+    progress?: number;
+    showProgress?: boolean;
+}
+
+const {
+    showProgress = true,
+} = Astro.props;
+
+if (!showProgress) {
+    return null;
+}
+
+const {
+    status,
+    blocked = false,
+    progress = 0,
+} = Astro.props;
+---
+
+<div class="progress-tracker">
+
+    {
+        steps.map((step) => {
+
+            const state = getStepState(
+                status,
+                step,
+                blocked
+            );
+
+            return (
+                <div class={`progress-step ${state}`}>
+
+                    <div class="progress-icon">
+                        {statusIcons[state]}
+                    </div>
+
+                    <div class="progress-label">
+                        {
+                            state === "blocked"
+                                ? "Dossier bloqué"
+                                : statusLabels[step]
+                        }
+                    </div>
+
+                </div>
+            );
+        })
+    }
+
+</div>
