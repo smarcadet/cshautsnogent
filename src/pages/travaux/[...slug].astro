@@ -1,0 +1,79 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Main from '../../layouts/Main.astro';
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const travaux = await getCollection("travaux");
+
+  return travaux.map((chantier) => ({
+    params: {
+      slug: chantier.id,
+    },
+    props: {
+      chantier,
+    },
+  }));
+}
+
+const { chantier } = Astro.props;
+
+const { Content } = await render(chantier);
+
+import {
+  steps,
+  statusLabels,
+  getStepState,
+  statusIcons
+} from "../../utils/travaux";
+
+const travaux = await getCollection("travaux");
+---
+
+<Layout title={chantier.data.title}>
+    <Main>
+        <article class="articles relative">
+
+            <p class="absolute -left-14 -top-7 min-w-max bg-(--accent) text-white px-3.5 py-1.5 rounded-sm">
+                Le <strong>{chantier.data.date.toLocaleDateString("fr-FR")}</strong>
+            </p>
+
+            <h1 class="pl-26">
+                {chantier.data.title}
+            </h1>
+
+            { chantier.data.showProgress && (
+                <div class="progress-tracker">
+
+                {
+                    steps.map((step) => {
+
+                    const state =
+                        getStepState(chantier.data.status, step);
+
+                    return (
+
+                        <div class={`progress-step ${state}`}>
+
+                        <div class="progress-icon">
+                            {statusIcons[state]}
+                        </div>
+
+                        <div class="progress-label">
+                            {statusLabels[step]}
+                        </div>
+
+                        </div>
+
+                    );
+                    })
+                }
+
+                </div>
+            )}
+
+            <Content />
+
+        </article>
+    </Main>
+</Layout>

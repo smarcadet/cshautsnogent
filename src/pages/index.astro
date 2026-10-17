@@ -13,6 +13,21 @@ const actualites = await getCollection("actualites");
 const dernieresActus = actualites
 .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
 .slice(0, 3);
+
+const travaux = await getCollection(
+  "travaux",
+  ({ data }) => data.published
+);
+
+const dernierTravail = travaux
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())[0];
+
+import {
+  steps,
+  statusLabels,
+  getStepState,
+  statusIcons
+} from "../utils/travaux";
 ---
 
 <Layout title="Accueil" isHome={true}>
@@ -71,15 +86,54 @@ const dernieresActus = actualites
 			<hr>
 
 			<section>
-				<h2>Le chantier du moment</h2>
-				<a href={`${baseUrl}/travaux/`}>&rarr; Voir tous les travaux</a>
+
+				<h2 class="mb-5">Le chantier du moment</h2>
+
+				<h3>
+					<a href={`${baseUrl}/travaux/${dernierTravail.id}`}>
+						{dernierTravail.data.title}
+					</a>
+				</h3>
+
+				<div class="progress-tracker">
+
+				{
+					steps.map((step) => {
+
+					const state =
+						getStepState(dernierTravail.data.status, step);
+
+					return (
+
+						<div class={`progress-step ${state}`}>
+
+						<div class="progress-icon">
+							{statusIcons[state]}
+						</div>
+
+						<div class="progress-label">
+							{statusLabels[step]}
+						</div>
+
+						</div>
+
+					);
+					})
+				}
+
+				</div>
+
+				<p>{dernierTravail.data.excerpt}</p>
+
+				<div class="flex justify-end"><a href={`${baseUrl}/suivi-des-travaux/`}>&rarr; Voir tous les travaux</a></div>
+
 			</section>
 
 			<hr>
 
 			<section>
-				<h2>État d'avancement des dossiers</h2>
-				<a href={`${baseUrl}/suivi-des-dossiers/`}>&rarr; Voir tous les dossiers</a>
+				<h2 class="mb-5">État d'avancement des dossiers</h2>
+				<div class="flex justify-end"><a href={`${baseUrl}/suivi-des-dossiers/`}>&rarr; Voir tous les dossiers</a></div>
 			</section> 
 		</Main>
 	</main>

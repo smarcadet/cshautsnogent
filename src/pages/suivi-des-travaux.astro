@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Main from '../layouts/Main.astro';
+import { getCollection } from "astro:content";
+import {
+  steps,
+  statusLabels,
+  getStepState,
+  statusIcons
+} from "../utils/travaux";
+
+const baseUrl = import.meta.env.BASE_URL;
+
+const travaux = await getCollection("travaux");
+
+const travauxTriees = travaux.sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<Layout title="Suivi des travaux">
+    <Main>
+
+    <h1>Suivi des travaux</h1>
+        
+    {
+      travauxTriees.map((item) => {
+
+        const currentStep =
+          steps.indexOf(item.data.status);
+
+        return (
+          <hr />
+          <article>
+
+            <h2>
+              <a href={`${baseUrl}/travaux/${item.id}`}>
+                {item.data.title}
+              </a>
+            </h2>
+
+            { item.data.showProgress && (
+              <div class="progress-tracker">
+
+                {
+                  steps.map((step) => {
+
+                    const state = getStepState(
+                      item.data.status,
+                      step,
+                      item.data.blocked,
+                    );
+
+                    return (
+
+                      <div class={`progress-step ${state}`}>
+
+                        <div class="progress-icon">
+                          {statusIcons[state]}
+                        </div>
+
+                        <div class="progress-label">
+                          {
+                            state === "blocked"
+                              ? "Dossier bloqué"
+                              : statusLabels[step]
+                          }
+                        </div>
+
+                      </div>
+
+                    );
+                  })
+                }
+
+              </div>
+            )}
+
+            <p>{item.data.excerpt}</p>
+
+          </article>
+        );
+      })
+    }
+
+    </Main>
+</Layout>

@@ -4,8 +4,8 @@ export const navigation = [
     href: "actualites",
   },
   {
-    label: "Suivi des dossiers",
-    href: "suivi-des-dossiers",
+    label: "Suivi des travaux",
+    href: "suivi-des-travaux",
   },
    {
     label: "Décisions AG",
