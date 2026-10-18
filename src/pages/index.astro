@@ -115,7 +115,60 @@ const currentWork = travaux
 
 			<section>
 				<h2 class="mb-5">État d'avancement des dossiers</h2>
-				<div class="flex justify-end"><a href={`${baseUrl}/suivi-des-dossiers/`} class="cta">Voir tous les dossiers <span aria-hidden="true">&rarr;</span></a></div>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Dossier</th>
+							<th>Priorité</th>
+							<th>État</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Départ des gardiens</td>
+							<td>🔴</td>
+							<td>À préparer activement</td>
+						</tr>
+						<tr>
+							<td>Balcons et façade 2/2 bis</td>
+							<td>🔴</td>
+							<td>Bloqué / à relancer</td>
+						</tr>
+						<tr>
+							<td>DPE collectif</td>
+							<td>🟠</td>
+							<td>À vérifier</td>
+						</tr>
+						<tr>
+							<td>Plan Pluriannuel de Travaux</td>
+							<td>🟠</td>
+							<td>En préparation</td>
+						</tr>
+						<tr>
+							<td>Suivi du syndic</td>
+							<td>🟡</td>
+							<td>Permanent</td>
+						</tr>
+						<tr>
+							<td>Canalisations de chauffage vétustes</td>
+							<td>🟡</td>
+							<td>En attente</td>
+						</tr>
+						<tr>
+							<td>Devenir de la loge</td>
+							<td>🔵</td>
+							<td>À étudier</td>
+						</tr>
+						<tr>
+							<td>Réorganisation des services de la résidence</td>
+							<td>🔵</td>
+							<td>À préparer</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="flex justify-end"><a href={`${baseUrl}/decisions-ag/`} class="cta">Voir tous les dossiers <span aria-hidden="true">&rarr;</span></a></div>
 			</section> 
 		</Main>
 	</main>
