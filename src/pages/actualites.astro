@@ -19,15 +19,22 @@ const actualitesTriees = actualites.sort(
             actualitesTriees.map((article) => (
                 <hr />
                 <article>
-                    <h2>
+                    <img
+                        src={`${baseUrl}${article.data.image ?? "/images/default-article.webp"}`}
+                        alt=""
+                        loading="lazy"
+                        class="object-cover object-[0_-40px] max-h-85 block w-full rounded-lg"
+                        />
+                    
+                    <p class="max-w-max bg-(--accent) text-white px-3.5 py-1.5 rounded-sm absolute -mt-13 ml-3 outline-2 outline-gray-300">
+                        {article.data.date.toLocaleDateString("fr-FR")}
+                    </p>
+
+                    <h2 class="mt-10">
                         <a href={`${baseUrl}/actualites/${article.id}`}>
                             {article.data.title}
                         </a>
                     </h2>
-            
-                    <p class="max-w-max bg-(--accent) text-white px-3.5 py-1.5 rounded-sm">
-                        {article.data.date.toLocaleDateString("fr-FR")}
-                    </p>
             
                     <p>{article.data.excerpt}</p>
                 </article>

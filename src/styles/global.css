@@ -28,18 +28,6 @@
         line-height: 1.5;
     }
 
-    button {
-        background-color: var(--primary);
-        color: white;
-        padding: 1.2em;
-        border-radius: var(--radius-lg);
-    }
-
-    button:focus {
-        outline: 2px solid var(--primary);
-        outline-offset: 2px;
-    }
-
     a:not(.nav-link) {
         color: var(--primary);
     }
@@ -56,6 +44,29 @@
     a:focus-visible {
         outline: 3px solid var(--primary);
         outline-offset: 2px;
+    }
+
+    button, .cta {
+        background-color: var(--primary);
+        color: white;
+        padding-block: .45rem;
+        padding-inline: .9rem;
+        border-radius: var(--radius-lg);
+        transition: background-color 0.2s ease;
+    }
+
+    button:hover, .cta:hover {
+        background-color: color-mix(in srgb, var(--primary) 70%, black);
+    }
+
+    button:focus-visible, .cta:focus-visible {
+        outline: 2px solid var(--primary);
+        outline-offset: 2px;
+    }
+
+    .cta.cta {
+        color: white;
+        text-decoration: none;
     }
 
     p {
@@ -121,6 +132,18 @@
     textarea {
         border: 1px solid var(--primary);
         display: block;
+    }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
     }
 
     .breadcrumb a {

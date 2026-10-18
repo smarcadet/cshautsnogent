@@ -4,7 +4,7 @@ import Main from '../layouts/Main.astro';
 import { Image } from 'astro:assets';
 import ProgressTracker from '../components/progress-tracker.astro';
 
-import hero from '../assets/bat_epivans.jpeg';
+import hero from '../assets/bat_epivans.webp';
 
 import { getCollection } from "astro:content";
 
@@ -52,7 +52,7 @@ const currentWork = travaux
 				</p>
 				<p>
 					Sur ce site, vous pouvez, via la page <a href={`${baseUrl}/nous-contacter`}>nous contacter</a>, nous signaler tout problème ou dysfonctionnement concernant les parties communes ou présentant un intérêt collectif pour la résidence. Votre retour d'expérience, qu'il concerne votre bâtiment ou les espaces communs, contribue à nous aider dans le suivi des dossiers de la copropriété.<br>
-					&rarr; N'hésitez pas à vous en servir.
+					<strong>N'hésitez pas à vous en servir.</strong>
 				</p>
 			</section>
 
@@ -64,17 +64,27 @@ const currentWork = travaux
 				<div class="flex flex-wrap gap-5">
 				{
 					dernieresActus.map((article) => (
-					<article class="rounded-lg px-8 py-6 mb-4 border-(--secondary) border-2 flex-1 first-of-type:basis-full [&>p]:line-clamp-4 [&:first-of-type>p]:line-clamp-none">
-						<h3 class="font-bold">
-							<a href={`${baseUrl}/actualites/${article.id}`}>
-								{article.data.title}
-							</a>
-						</h3>
-						<p>{article.data.excerpt}</p>
+					<article class="rounded-lg overflow-hidden mb-4 border-(--secondary) border-2 flex-1 first-of-type:basis-full [&>p]:line-clamp-4 [&:first-of-type>p]:line-clamp-none [&:first-of-type>img]:max-h-80">
+						<img
+							src={`${baseUrl}${article.data.image ?? "/images/default-article.webp"}`}
+							alt=""
+							loading="lazy"
+							class="object-cover object-top max-h-45 block w-full"
+							/>
+						<div class="px-8 pt-6">
+							<h3 class="font-bold">
+								<a href={`${baseUrl}/actualites/${article.id}`}>
+									{article.data.title}
+								</a>
+							</h3>
+							<p class="text-base">{article.data.excerpt}</p>
+						</div>
 					</article>
 					))
 				}
 				</div>
+
+				<div class="mt-10 flex justify-end"><a href={`${baseUrl}/actualites/`} class="cta">Voir toutes les actualités <span aria-hidden="true">&rarr;</span></a></div>
 			</section>
 
 			<hr>
@@ -95,9 +105,9 @@ const currentWork = travaux
 					showProgress={currentWork.data.showProgress}
 				/>
 
-				<p>{currentWork.data.excerpt}</p>
+				<p class="text-base">{currentWork.data.excerpt}</p>
 
-				<div class="flex justify-end"><a href={`${baseUrl}/suivi-des-travaux/`}>&rarr; Voir tous les travaux</a></div>
+				<div class="flex justify-end"><a href={`${baseUrl}/suivi-des-travaux/`} class="cta">Voir tous les travaux <span aria-hidden="true">&rarr;</span></a></div>
 
 			</section>
 
@@ -105,7 +115,7 @@ const currentWork = travaux
 
 			<section>
 				<h2 class="mb-5">État d'avancement des dossiers</h2>
-				<div class="flex justify-end"><a href={`${baseUrl}/suivi-des-dossiers/`}>&rarr; Voir tous les dossiers</a></div>
+				<div class="flex justify-end"><a href={`${baseUrl}/suivi-des-dossiers/`} class="cta">Voir tous les dossiers <span aria-hidden="true">&rarr;</span></a></div>
 			</section> 
 		</Main>
 	</main>

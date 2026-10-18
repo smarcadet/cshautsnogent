@@ -2,6 +2,7 @@
 title: "Prévoir le départ des gardiens : les chantiers de la transition sont lancés"
 date: 2026-10-01
 published: true
+image: "/images/gardienne.webp"
 excerpt: "Le départ des gardiens marque une évolution importante dans l'organisation de notre résidence. Au-delà des aspects humains et financiers, cette transition implique de nombreuses adaptations techniques, administratives et logistiques. Gestion des déchets, distribution du courrier, entretien des espaces communs ou devenir de la loge : plusieurs dossiers structurants sont désormais engagés pour garantir la continuité des services et préserver la qualité de vie aux Hauts de Nogent."
 ---
  
