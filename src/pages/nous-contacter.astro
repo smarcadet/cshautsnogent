@@ -6,65 +6,130 @@ import Main from '../layouts/Main.astro';
 <Layout title="Nous contacter">
 	<Main>
 
+    <p>Une question, un signalement ou une suggestion concernant la résidence ? Le Conseil Syndical est à votre écoute. Les messages transmis via ce formulaire sont reçus par l'ensemble des membres du Conseil Syndical afin d'assurer un meilleur suivi des demandes.</p>
 
-<form action="https://api.web3forms.com/submit">
+    <form
+      action="https://api.web3forms.com/submit"
+      method="POST"
+    >
 
-    <p>Tous les champs sont obligatoires</p>
+        <p>Tous les champs sont obligatoires</p>
 
-    <input
-      type="hidden"
-      name="access_key"
-      value="TA_CLE_WEB3FORMS"
-    />
+        <input type="hidden" name="access_key" value="ea2d52be-cd1a-4e81-9b08-1ad0d2559b92">
 
-    <label for="nom">
-        Nom
-    </label>
+        <input
+          type="hidden"
+          name="subject"
+          value="Nouveau message depuis le site des Hauts de Nogent"
+        />
 
-    <input
-      id="nom"
-      name="first_name"
-      type="text"
-      required
-    />
+        <input
+          type="hidden"
+          name="from_name"
+          value="Site CS Hauts de Nogent"
+        />
 
-    <label for="prenom">
-        Prénom
-    </label>
+        <input
+          type="hidden"
+          name="source"
+          value="Formulaire de contact du site"
+        />
 
-    <input
-      id="prenom"
-      name="name"
-      type="text"
-      required
-    />
+        <input
+          type="hidden"
+          name="redirect"
+          value="https://ton-site.fr/contact/merci"
+        />
 
-    <label for="email">
-        Email
-    </label>
+        <input
+          type="hidden"
+          name="access_key"
+          value="TA_CLE_WEB3FORMS"
+        />
 
-    <input
-      id="email"
-      type="email"
-      name="email"
-      type="email"
-      required
-    />
+        <label for="nom">
+            Nom
+        </label>
 
-    <label for="message">
-        Message
-    </label>
+        <input
+          id="nom"
+          name="first_name"
+          type="text"
+          required
+        />
 
-    <textarea
-      id="message"
-      name="message"
-      required
-    ></textarea>
+        <label for="prenom">
+            Prénom
+        </label>
 
-    <button type="submit">
-        Envoyer
-    </button>
+        <input
+          id="prenom"
+          name="name"
+          type="text"
+          required
+        />
 
-</form>
-</Main>
+        <label for="bat">
+            Bâtiment
+        </label>
+
+        <select
+          id="bat"
+          name="batiment"
+          required
+        >
+          <option value="">
+            Sélectionnez votre bâtiment
+          </option>
+
+          <option>147 Boulevard de Strasbourg</option>
+          <option>2 Allée des Epivans</option>
+          <option>2 bis Allée des Epivans</option>
+        </select>
+
+        <label for="etage">
+            Etage
+        </label>
+
+        <input
+          id="etage"
+          name="etage"
+          type="text"
+          required
+        />
+
+        <label for="email">
+            Email
+        </label>
+
+        <input
+          id="email"
+          type="email"
+          name="email"
+          type="email"
+          required
+        />
+
+        <label for="message">
+            Message
+        </label>
+
+        <textarea
+          id="message"
+          name="message"
+          required
+        ></textarea>
+
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          tabindex="-1"
+          autocomplete="off"
+        />
+
+        <div class="flex justify-end"><button type="submit">Envoyer mon message <span aria-hidden="true">&rarr;</span></button></div>
+
+    </form>
+  </Main>
 </Layout>
