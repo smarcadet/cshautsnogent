@@ -6,50 +6,40 @@ import Main from '../layouts/Main.astro';
 <Layout title="Nous contacter">
 	<Main>
 
+    <h1>Nous contacter</h1>
+
     <p>Une question, un signalement ou une suggestion concernant la résidence ? Le Conseil Syndical est à votre écoute. Les messages transmis via ce formulaire sont reçus par l'ensemble des membres du Conseil Syndical afin d'assurer un meilleur suivi des demandes.</p>
 
     <form
       action="https://api.web3forms.com/submit"
       method="POST"
+      class="form rounded-lg max-w-[80%] mx-auto bg-gray-100 border-2 border-(--secondary) px-8 py-1.5 pb-8"
     >
 
-        <p>Tous les champs sont obligatoires</p>
+        <p class="italic text-base">Tous les champs sont obligatoires</p>
 
-        <input type="hidden" name="access_key" value="ea2d52be-cd1a-4e81-9b08-1ad0d2559b92">
+        <input
+          type="hidden"
+          name="access_key"
+          value="ea2d52be-cd1a-4e81-9b08-1ad0d2559b92"
+        />
 
         <input
           type="hidden"
           name="subject"
-          value="Nouveau message depuis le site des Hauts de Nogent"
+          value="Message depuis le site des Hauts de Nogent"
         />
 
         <input
           type="hidden"
           name="from_name"
-          value="Contact site CS Hauts Nogent"
+          value="Message de copropriétaire"
         />
 
         <input
           type="hidden"
           name="source"
-          value="Formulaire de contact du site"
-        />
-
-        <!-- <input
-          type="hidden"
-          name="redirect"
-          value="https://smarcadet.github.io/cshautsnogent/contact/merci"
-        /> -->
-
-        <label for="nom">
-            Nom
-        </label>
-
-        <input
-          id="nom"
-          name="first_name"
-          type="text"
-          required
+          value="Formulaire de contact du site internet"
         />
 
         <label for="prenom">
@@ -58,7 +48,18 @@ import Main from '../layouts/Main.astro';
 
         <input
           id="prenom"
-          name="name"
+          name="prénom"
+          type="text"
+          required
+        />
+
+        <label for="nom">
+            Nom
+        </label>
+
+        <input
+          id="nom"
+          name="nom"
           type="text"
           required
         />
@@ -69,7 +70,7 @@ import Main from '../layouts/Main.astro';
 
         <select
           id="bat"
-          name="batiment"
+          name="bâtiment"
           required
         >
           <option value="">
@@ -81,18 +82,27 @@ import Main from '../layouts/Main.astro';
           <option>2 bis Allée des Epivans</option>
         </select>
 
-        <br>
-
         <label for="etage">
             Etage
         </label>
 
-        <input
+        <select
           id="etage"
-          name="etage"
-          type="text"
+          name="étage"
           required
-        />
+        >
+          <option value="">
+            Sélectionnez votre étage
+          </option>
+
+          <option>RDC</option>
+          <option>1er</option>
+          <option>2ème</option>
+          <option>3ème</option>
+          <option>4ème</option>
+          <option>5ème</option>
+          <option>6ème</option>
+        </select>
 
         <label for="email">
             Email
@@ -118,15 +128,6 @@ import Main from '../layouts/Main.astro';
         <input
           type="checkbox"
           name="botcheck"
-          class="hidden"
-          tabindex="-1"
-          autocomplete="off"
-        />
-
-        <input
-          type="email"
-          name="recpient_email"
-          value="conseil.syndical.hautsnogent@gmail.com"
           class="hidden"
           tabindex="-1"
           autocomplete="off"
