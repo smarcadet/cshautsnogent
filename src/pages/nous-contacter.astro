@@ -26,7 +26,7 @@ import Main from '../layouts/Main.astro';
         <input
           type="hidden"
           name="from_name"
-          value="Site CS Hauts de Nogent"
+          value="Contact site CS Hauts Nogent"
         />
 
         <input
@@ -118,6 +118,15 @@ import Main from '../layouts/Main.astro';
         <input
           type="checkbox"
           name="botcheck"
+          class="hidden"
+          tabindex="-1"
+          autocomplete="off"
+        />
+
+        <input
+          type="email"
+          name="recpient_email"
+          value="conseil.syndical.hautsnogent@gmail.com"
           class="hidden"
           tabindex="-1"
           autocomplete="off"
