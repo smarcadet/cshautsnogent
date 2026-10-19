@@ -26,21 +26,17 @@ Un premier vote de principe est intervenu en février 2025 sur la base d'un prem
 
 L'Assemblée Générale de mai 2026 a ensuite validé les travaux permettant leur réalisation.
 
-Pourtant, plus d'un an après les premières décisions prises par les copropriétaires, force est de constater qu'aucune opération n'a réellement été menée à son terme.
-
-Cette situation est particulièrement difficile à comprendre pour les résidents concernés qui continuent de subir les conséquences des infiltrations alors que les travaux ont été votés depuis de nombreux mois.
+Pourtant, plus d'un an après les premières décisions prises par les copropriétaires, force est de constater qu'aucune opération n'a réellement été menée à son terme. Cette situation est particulièrement difficile à comprendre pour les résidents concernés qui continuent de subir les conséquences des infiltrations alors que les travaux ont été votés depuis de nombreux mois.
 
 ## Un premier chantier interrompu suite à un grave problème de communication
 
 La situation a malheureusement été aggravée par un incident particulièrement surprenant.
 
-L'un des balcons a fait l'objet d'un début d'intervention par une entreprise qui n'était pas celle retenue lors du vote en Assemblée Générale.
+L'un des balcons a fait l'objet d'un début d'intervention par une entreprise qui n'était pas celle retenue lors du vote en Assemblée Générale. Plus préoccupant encore, ni le Conseil Syndical ni les copropriétaires concernés n'avaient été informés de cette intervention.
 
-Plus préoccupant encore, ni le Conseil Syndical ni les copropriétaires concernés n'avaient été informés de cette intervention.
+Face à cette situation et faute d'informations fiables sur l'entreprise présente et sur son mandat réel, l'intervention a dû être stoppée en urgence. Néanmoins, les travaux ayant été commencé, le conseil syndical a consenti à ce qu'ils soient finalisés pour ne pas pénaliser le copropriétaire avec un balcon en chantier.
 
-Face à cette situation et faute d'informations fiables sur l'entreprise présente et sur son mandat réel, l'intervention a dû être stoppée en urgence.
-
-Cet épisode illustre les très importantes difficultés de communication rencontrées sur ce dossier.
+Cet épisode illustre des couacs rencontrés dans la communication de Cytia sur ce dossier.
 
 ## Aucune date annoncée à ce jour
 
@@ -51,7 +47,7 @@ Le Conseil Syndical ne dispose :
 - d'aucun planning d'intervention ;
 - d'aucune date prévisionnelle de démarrage ;
 - d'aucune information précise sur les prochaines étapes du chantier.
-- 
+  
 Malgré plusieurs sollicitations, nous rencontrons de très grandes difficultés à obtenir des réponses de la part du syndic.
 
 Depuis le remplacement de Monsieur Grenier, il s'avère particulièrement compliqué de joindre sa remplaçante, Madame Federo, et d'obtenir des informations claires sur l'avancement du dossier.
@@ -66,7 +62,7 @@ Lorsque des travaux sont votés par les copropriétaires, particulièrement lors
 - une communication régulière ;
 - un calendrier prévisionnel ;
 - une exécution des décisions votées dans des délais raisonnables.
-- 
+  
 Aujourd'hui, aucun de ces éléments ne nous est fourni.
 
 Un premier vote de principe est intervenu il y a désormais plus d'un an. L'Assemblée Générale a confirmé la réalisation de ces travaux il y a plusieurs mois déjà. Malgré cela, aucun calendrier n'est communiqué aux copropriétaires et aucun commencement de chantier n'est aujourd'hui annoncé.
