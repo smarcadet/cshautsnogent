@@ -11,7 +11,9 @@ Le départ annoncé des gardiens au 1er janvier prochain constitue une échéanc
 
 Il apparaît donc indispensable d'organiser une Assemblée Générale avant la fin de l'année afin de permettre aux copropriétaires de se prononcer sur les différents scénarios envisageables et d'anticiper les conséquences de cette transition.
 
-## Une première décision fondamentale : le renouvellement des gardiens
+Les décisons suivantes sont toutes soumisent à un vote obligatoire.
+
+## Une première décision fondamentale : le non renouvellement des gardiens
 
 La première question à trancher sera naturellement celle du maintien ou non d'un service de gardiennage au sein de la résidence.
 
@@ -50,3 +52,11 @@ Reporter ces décisions après le départ effectif des gardiens exposerait la r�
 La tenue d'une Assemblée Générale avant la fin de l'année permettrait au contraire de prendre les décisions utiles en toute transparence, de planifier les travaux et prestations nécessaires et d'aborder cette transition dans les meilleures conditions.
 
 Le Conseil Syndical souhaite donc que ces différents sujets puissent être étudiés et débattus collectivement dans les meilleurs délais afin de permettre aux copropriétaires de se prononcer de manière éclairée sur l'avenir de notre résidence.
+
+## Ordre du jour à soumettre à la prochaine AG
+- Non renouvellement des gardiens
+- Mise en place du système Vigik
+- Installation des boîtes aux lettres
+- Fermeture définitive des vide-ordures
+- Création de la porte vers le parking
+- L'intégration de la loge dans la copropriété / vente de la loge
