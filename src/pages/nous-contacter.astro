@@ -18,112 +18,127 @@ import Main from '../layouts/Main.astro';
 
         <p class="italic text-base">Tous les champs sont obligatoires</p>
 
-        <input
-          type="hidden"
-          name="access_key"
-          value="ea2d52be-cd1a-4e81-9b08-1ad0d2559b92"
-        />
+        <fieldset class="hidden">
+          <legend>Méta données et connexion</legend>
+          <input
+            type="hidden"
+            name="access_key"
+            value="ea2d52be-cd1a-4e81-9b08-1ad0d2559b92"
+          />
 
-        <input
-          type="hidden"
-          name="subject"
-          value="Message depuis le site des Hauts de Nogent"
-        />
+          <input
+            type="hidden"
+            name="subject"
+            value="Message depuis le site des Hauts de Nogent"
+          />
 
-        <input
-          type="hidden"
-          name="from_name"
-          value="Message de copropriétaire"
-        />
+          <input
+            type="hidden"
+            name="from_name"
+            value="Message de coproprietaire"
+          />
 
-        <input
-          type="hidden"
-          name="source"
-          value="Formulaire de contact du site internet"
-        />
+          <input
+            type="hidden"
+            name="source"
+            value="Formulaire de contact du site internet"
+          />
+        </fieldset>
 
-        <label for="prenom">
+        <fieldset>
+          <legend>Civilité</legend>
+
+          <label for="prenom">
             Prénom
-        </label>
+          </label>
 
-        <input
-          id="prenom"
-          name="prénom"
-          type="text"
-          required
-        />
+          <input
+            id="prenom"
+            name="prénom"
+            type="text"
+            required
+          />
 
-        <label for="nom">
-            Nom
-        </label>
+          <label for="nom">
+              Nom
+          </label>
 
-        <input
-          id="nom"
-          name="nom"
-          type="text"
-          required
-        />
+          <input
+            id="nom"
+            name="nom"
+            type="text"
+            required
+          />
+        </fieldset>
 
-        <label for="bat">
-            Bâtiment
-        </label>
+        <fieldset>
+          <legend>Localisation</legend>
 
-        <select
-          id="bat"
-          name="bâtiment"
-          required
-        >
-          <option value="">
-            Sélectionnez votre bâtiment
-          </option>
+          <label for="bat">
+            Dans quel bâtiment êtes-vous ?
+          </label>
 
-          <option>147 Boulevard de Strasbourg</option>
-          <option>2 Allée des Epivans</option>
-          <option>2 bis Allée des Epivans</option>
-        </select>
+          <select
+            id="bat"
+            name="bâtiment"
+            required
+          >
+            <option value="">
+              Sélectionnez votre bâtiment
+            </option>
 
-        <label for="etage">
-            Etage
-        </label>
+            <option>147 Boulevard de Strasbourg</option>
+            <option>2 Allée des Epivans</option>
+            <option>2 bis Allée des Epivans</option>
+          </select>
 
-        <select
-          id="etage"
-          name="étage"
-          required
-        >
-          <option value="">
-            Sélectionnez votre étage
-          </option>
+          <label for="etage">
+              À quel étage ?
+          </label>
 
-          <option>RDC</option>
-          <option>1er</option>
-          <option>2ème</option>
-          <option>3ème</option>
-          <option>4ème</option>
-          <option>5ème</option>
-          <option>6ème</option>
-        </select>
+          <select
+            id="etage"
+            name="étage"
+            required
+          >
+            <option value="">
+              Sélectionnez votre étage
+            </option>
 
-        <label for="email">
-            Email
-        </label>
+            <option>RDC</option>
+            <option>1er</option>
+            <option>2ème</option>
+            <option>3ème</option>
+            <option>4ème</option>
+            <option>5ème</option>
+            <option>6ème</option>
+          </select>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Communication</legend>
 
-        <input
-          id="email"
-          type="email"
-          name="email"
-          required
-        />
+          <label for="email">
+            Renseignez votre email <span class="text-base"><em>(Pour pouvoir vous répondre)</em></span>
+          </label>
 
-        <label for="message">
-            Message
-        </label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+          />
 
-        <textarea
-          id="message"
-          name="message"
-          required
-        ></textarea>
+          <label for="message">
+              Votre message
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            required
+          ></textarea>
+        </fieldset>
 
         <input
           type="checkbox"

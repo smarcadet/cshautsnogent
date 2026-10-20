@@ -176,12 +176,6 @@
         box-sizing: border-box;
     }
 
-    input,
-    textarea {
-        border: 1px solid var(--primary);
-        display: block;
-    }
-
     .sr-only {
         position: absolute;
         width: 1px;
@@ -376,5 +370,30 @@
     .form label {
         margin-bottom: .2rem;
         display: block;
+    }
+
+    .form fieldset:not(:last-of-type) {
+        border-bottom: 1px solid var(--primary);
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+    }
+
+    .form fieldset:first-of-type legend {
+        padding-top: 20px;
+    }
+
+    .form legend {
+        display: block;
+        margin-bottom: 15px;
+        font-size: var(--text-2xl);
+    }
+
+    .form legend:before {
+        content: "";
+        display: inline-block;
+        margin-right: 10px;
+        width: 10px;
+        height: 10px;
+        background-color: var(--accent-light);
     }
 }

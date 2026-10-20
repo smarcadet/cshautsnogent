@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Main from '../layouts/Main.astro';
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <Layout>
@@ -9,18 +10,42 @@ import Main from '../layouts/Main.astro';
 
         <p>Le Conseil Syndical est aujourd'hui composé de trois copropriétaires élus par l'Assemblée Générale afin de représenter les intérêts de l'ensemble des résidents et d'assurer le lien entre les copropriétaires et le syndic.</p>
 
+        <h2 class="pt-0 mb-5">Composition du conseil syndical</h2>
+        <ul>
+            <li>Liliane Geoffroy</li>
+            <li>Anne-Marie Kniesbeck</li>
+            <li>Stéphane Marcadet</li>
+        </ul>
+
         <p>Notre rôle est de suivre les dossiers de la résidence, de contrôler la gestion du syndic, de faire remonter les difficultés rencontrées par les occupants et de contribuer, autant que possible, à l'amélioration de notre cadre de vie commun.</p>
 
         <p>Il nous semble important de rappeler que les membres du Conseil Syndical sont avant tout des <strong>copropriétaires comme les autres</strong>. Nous ne sommes ni des professionnels de l'immobilier, ni des salariés de la copropriété, ni des employés du syndic. Nous habitons la résidence, payons nos charges et subissons les mêmes désagréments que l'ensemble des résidents lorsque des problèmes surviennent.</p>
 
         <p>L'engagement au sein du Conseil Syndical repose entièrement sur le <strong>bénévolat</strong>. Les réunions, les échanges avec le syndic, le suivi des travaux, la création du site internet, la gestion des communications ou encore les démarches auprès des différents intervenants sont réalisés sur notre temps personnel, en parallèle de nos vies professionnelles et familiales.</p>
 
-        <p>Nous avons pleinement conscience que certaines situations peuvent générer de l'agacement ou de l'incompréhension. Pour autant, le Conseil Syndical ne peut pas être tenu pour responsable de l'ensemble des dysfonctionnements rencontrés dans la résidence. Notre rôle est justement d'essayer de faire avancer les dossiers, d'obtenir des réponses et de défendre les intérêts de la copropriété auprès des différents intervenants.</p>
+        <p>Nous avons pleinement conscience que certaines situations peuvent générer de l'agacement ou de l'incompréhension. Pour autant, le Conseil Syndical ne peut pas être tenu pour responsable des dysfonctionnements rencontrés dans la résidence. Notre rôle est justement d'essayer de faire avancer les dossiers, d'obtenir des réponses et de défendre les intérêts de la copropriété auprès des différents intervenants.</p>
 
         <p>Nous souhaitons que les échanges avec les copropriétaires restent constructifs, respectueux et bienveillants. Les remarques, suggestions et signalements sont toujours les bienvenus lorsqu'ils contribuent à faire progresser la situation.</p>
 
         <p>Enfin, nous sommes convaincus qu'une copropriété fonctionne d'autant mieux que chacun participe à son niveau. Le Conseil Syndical ne prétend pas tout voir ni tout savoir, et les remontées d'informations des résidents constituent souvent une aide précieuse pour identifier les problèmes et suivre leur résolution.</p>
 
-        <p>Notre objectif est simple : <strong>agir, informer et défendre au mieux les intérêts de l'ensemble des copropriétaires, dans un esprit de dialogue et de transparence.</strong></p>
+        <p>Si vous avez une question, une information à nous remonter ou une suggestion, vous pouvez nous joindre via la page <a href={`${baseUrl}/nous-contacter`}>Nous contacter</a>. Nous recevrons tous les trois votre message.</p>
+
+        <h2 class="pt-0 mb-5">Ce que le Conseil Syndical peut faire sans vote en AG</h2>
+        <ul>
+            <li>rencontrer des prestataires ;</li>
+            <li>demander des devis ;</li>
+            <li>consulter un architecte ;</li>
+            <li>consulter un avocat ;</li>
+            <li>consulter un notaire ;</li>
+            <li>consulter un géomètre ;</li>
+            <li>faire réaliser des études techniques ;</li>
+            <li>demander des estimations financières.</li>
+        </ul>
+
+        <p>Le rôle du Conseil Syndical est de préparer et et de recommander. Et c'est ensuite <strong>à l'ensemble de la copropriété de décider</strong>.</p>
+
+        <h3>Notre objectif est simple</h3>
+        <p class="mt-3"><strong>agir, informer et défendre</strong> au mieux les intérêts de l'ensemble des copropriétaires, dans un esprit de <strong>dialogue et de transparence</strong>.</p>
     </Main>
 </Layout>
