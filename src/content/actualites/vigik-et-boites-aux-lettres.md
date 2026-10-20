@@ -6,8 +6,6 @@ image: "/images/vigik.webp"
 excerpt: L'installation prochaine de boîtes aux lettres normalisées et d'un système Vigik constitue une évolution importante pour la copropriété. Si ces équipements apportent des avantages en matière de distribution du courrier et de sécurité, leur mise en œuvre dans une résidence équipée d'interphones et de portes d'accès anciens nécessite plusieurs vérifications techniques et peut entraîner des travaux complémentaires.
 ---
 
-L'installation prochaine de boîtes aux lettres normalisées et d'un système Vigik constitue une évolution importante pour la copropriété. Si ces équipements apportent des avantages en matière de distribution du courrier et de sécurité, leur mise en œuvre dans une résidence équipée d'interphones et de portes d'accès anciens nécessite plusieurs vérifications techniques et peut entraîner des travaux complémentaires.
-
 ## Pourquoi installer un système Vigik ?
 
 Le départ des gardiens impose de repenser l'accès aux halls d'immeuble pour les différents intervenants extérieurs.

@@ -6,8 +6,6 @@ image: "/images/architecte.webp"
 excerpt: Dans les prochaines semaines, un architecte interviendra au sein de la résidence afin d'évaluer plusieurs sujets techniques importants signalés par le Conseil Syndical. Cette visite a pour objectif d'obtenir un avis professionnel sur différents désordres constatés et de déterminer les solutions envisageables, ainsi que leur faisabilité technique.
 ---
 
-Dans les prochaines semaines, un architecte interviendra au sein de la résidence afin d'évaluer plusieurs sujets techniques importants signalés par le Conseil Syndical. Cette visite a pour objectif d'obtenir un avis professionnel sur différents désordres constatés et de déterminer les solutions envisageables, ainsi que leur faisabilité technique.
-
 ## Un état des façades à examiner
 
 L'un des principaux points d'attention concerne certaines parties des façades dont l'état s'est dégradé au fil du temps. Des détachements de pierre et de revêtement ont notamment été observés par endroits, soulevant des préoccupations légitimes en matière de sécurité.

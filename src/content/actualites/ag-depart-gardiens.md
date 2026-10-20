@@ -6,11 +6,6 @@ image: "/images/ag.webp"
 excerpt: "Le départ annoncé des gardiens au 1er janvier prochain constitue une échéance majeure pour notre copropriété. Quelle que soit l'issue des réflexions en cours concernant leur remplacement ou non, de nombreuses décisions devront être prises rapidement afin de garantir la continuité des services essentiels à la résidence. Il apparaît donc indispensable d'organiser une Assemblée Générale avant la fin de l'année afin de permettre aux copropriétaires de se prononcer sur les différents scénarios envisageables et d'anticiper les conséquences de cette transition."
 ---
 
-
-Le départ annoncé des gardiens au 1er janvier prochain constitue une échéance majeure pour notre copropriété. Quelle que soit l'issue des réflexions en cours concernant leur remplacement ou non, de nombreuses décisions devront être prises rapidement afin de garantir la continuité des services essentiels à la résidence.
-
-Il apparaît donc indispensable d'organiser une Assemblée Générale avant la fin de l'année afin de permettre aux copropriétaires de se prononcer sur les différents scénarios envisageables et d'anticiper les conséquences de cette transition.
-
 Les décisons suivantes sont toutes soumisent à un vote obligatoire.
 
 ## Une première décision fondamentale : le non renouvellement des gardiens
