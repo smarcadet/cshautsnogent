@@ -1,6 +1,6 @@
 ---
 title: "Ascenseur du 147 boulevard de Strasbourg : une panne qui s'éternise"
-date: 2026-09-01
+date: 2026-09-03
 published: true
 image: "/images/ascenseur.webp"
 excerpt: "Depuis plusieurs semaines, les résidents du 147 boulevard de Strasbourg sont confrontés à des pannes récurrentes de l'ascenseur. Si l'origine du dysfonctionnement semble aujourd'hui relativement bien identifiée, aucune solution durable n'a encore permis de retrouver un fonctionnement normal de l'appareil. Une situation difficilement compréhensible pour les occupants, d'autant plus que cet ascenseur est un équipement récent que l'on peut raisonnablement considérer comme neuf."

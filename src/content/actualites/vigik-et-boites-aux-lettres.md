@@ -1,6 +1,6 @@
 ---
 title: "Vigik, interphones et boîtes aux lettres : quels impacts pour notre résidence ?"
-date: 2026-10-01
+date: 2026-09-15
 published: true
 image: "/images/vigik.webp"
 excerpt: L'installation prochaine de boîtes aux lettres normalisées et d'un système Vigik constitue une évolution importante pour la copropriété. Si ces équipements apportent des avantages en matière de distribution du courrier et de sécurité, leur mise en œuvre dans une résidence équipée d'interphones et de portes d'accès anciens nécessite plusieurs vérifications techniques et peut entraîner des travaux complémentaires.

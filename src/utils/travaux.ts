@@ -38,6 +38,16 @@ export const statusIcons = {
 }
 
 /**
+ * Arai labels
+ */
+export const stateLabels = {
+  completed: "terminé",
+  current: "en cours",
+  blocked: "bloqué",
+  pending: "en attente",
+} as const;
+
+/**
  * Etat visuel d'une étape
  */
 export function getStepState(

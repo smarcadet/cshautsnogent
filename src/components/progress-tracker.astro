@@ -4,6 +4,7 @@ import {
     statusLabels,
     getStepState,
     statusIcons,
+    stateLabels,
 } from "../utils/travaux";
 
 interface Props {
@@ -24,11 +25,10 @@ if (!showProgress) {
 const {
     status,
     blocked = false,
-    progress = 0,
 } = Astro.props;
 ---
 
-<div class="progress-tracker">
+<ol class="progress-tracker">
 
     {
         steps.map((step) => {
@@ -40,7 +40,7 @@ const {
             );
 
             return (
-                <div class={`progress-step ${state}`}>
+                <li class={`progress-step ${state}`} aria-label={`${statusLabels[step]} : ${stateLabels[state]}`}>
 
                     <div class="progress-icon">
                         {statusIcons[state]}
@@ -54,9 +54,9 @@ const {
                         }
                     </div>
 
-                </div>
+                </li>
             );
         })
     }
 
-</div>
+</ol>

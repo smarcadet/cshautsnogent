@@ -1,6 +1,6 @@
 ---
 title: La résidence se prépare à accueillir un architecte pour plusieurs expertises techniques
-date: 2026-10-11
+date: 2026-10-08
 published: true
 image: "/images/architecte.webp"
 excerpt: Dans les prochaines semaines, un architecte interviendra au sein de la résidence afin d'évaluer plusieurs sujets techniques importants signalés par le Conseil Syndical. Cette visite a pour objectif d'obtenir un avis professionnel sur différents désordres constatés et de déterminer les solutions envisageables, ainsi que leur faisabilité technique.

@@ -31,7 +31,7 @@ Selon cette analyse :
 - les désordres observés concernent principalement les parements de façade ;
 - le vieillissement des joints a permis à l'eau de s'infiltrer ;
 - ces infiltrations ont progressivement fragilisé certaines plaques de parement ;
-- le principal risque identifié est la chute éventuelle de morceaux de parement ou de plaques insuffisamment maintenues.
+- le principal risque identifié est la chute éventuelle de morceaux de pierre insuffisamment maintenues.
 
 Le bureau d'études indique également que les méthodes de pose actuelles ne permettent plus un simple collage des éléments de pierre. Les éléments instables devront être refixés mécaniquement sur leur support afin de garantir leur maintien dans le temps.
 
@@ -42,8 +42,7 @@ Les premières recommandations formulées sont les suivantes :
 - reprise des joints dégradés ;
 - restauration des zones laissant pénétrer l'eau ;
 - contrôle des éléments présentant un risque de décollement ;
-- fixation mécanique des plaques instables ;
-- intervention de spécialistes d'accès en hauteur lorsque cela est nécessaire ;
+- intervention de spécialistes d'accès en hauteur (cordistes) lorsque cela est nécessaire ;
 - sécurisation des zones présentant un risque de chute.
 
 Le bureau d'études précise par ailleurs qu'il n'est pas nécessaire de remplacer systématiquement les plaques lorsque celles-ci sont encore en bon état. Une refixation peut être suffisante dans certains cas.

@@ -28,6 +28,10 @@
         line-height: 1.5;
     }
 
+
+    /* ****************** */
+    /* ***** GLOBAL ***** */
+    /* ****************** */
     a:not(.nav-link) {
         color: var(--primary);
     }
@@ -115,6 +119,10 @@
         margin-top: 0;
     }
 
+
+    /* ***************** */
+    /* ***** TABLE ***** */
+    /* ***************** */
     table {
         width: 101%;
         margin-left: -2px;
@@ -136,9 +144,13 @@
     }
 
     tr:nth-of-type(even) {
-        background-color: color-mix(in srgb, var(--background) 60%, white);
+        background-color: color-mix(in srgb, var(--primary) 15%, white);
     }
 
+
+    /* ********************* */
+    /* ***** SEPARATOR ***** */
+    /* ********************* */
     hr {
     position: relative;
     margin-top: 50px;
@@ -176,6 +188,10 @@
         box-sizing: border-box;
     }
 
+
+    /* ******************* */
+    /* ***** SR-ONLY ***** */
+    /* ******************* */
     .sr-only {
         position: absolute;
         width: 1px;
@@ -188,6 +204,10 @@
         border: 0;
     }
 
+
+    /* ********************** */
+    /* ***** BREADCRUMB ***** */
+    /* ********************** */
     .breadcrumb a {
         color: black;
         text-decoration: underline;
@@ -198,6 +218,10 @@
         text-decoration: none;
     }
 
+
+    /* ********************* */
+    /* ***** SKIP LINK ***** */
+    /* ********************* */
     .skip-link {
         position: absolute;
         top: -999px;
@@ -215,6 +239,10 @@
         outline: 3px solid #ff0;
     }
 
+
+    /* ******************* */
+    /* ***** TOOLTIP ***** */
+    /* ******************* */
     .tooltip-container {
         position: relative;
     }
@@ -256,6 +284,9 @@
         display: block;
     }
 
+    /* ******************************** */
+    /* ***** PROGRESS TRACKER BAR ***** */
+    /* ******************************** */
     .progress-tracker {
         display: flex;
         align-items: start;
@@ -282,7 +313,7 @@
     }
 
     .progress-step.completed:not(:last-child)::after {
-        background: #22c55e;
+        background-color: var(--primary);
     }
 
     .progress-icon {
@@ -300,14 +331,14 @@
     }
 
     .completed .progress-icon {
-        background: #22c55e;
-        border-color: #22c55e;
+        background-color: var(--primary);
+        border-color: var(--primary);
         color: white;
     }
 
     .current .progress-icon {
-        background: #facc15;
-        border-color: #facc15;
+        background: var(--surface);
+        border-color: var(--surface);
         color: #333;
     }
 
@@ -327,7 +358,7 @@
     }
 
     .completed .progress-label {
-        color: #15803d;
+        color: var(--primary);
     }
 
     .current .progress-label {
@@ -342,6 +373,10 @@
         color: #bc2929;
     }
 
+
+    /* ******************** */
+    /* **** FORMULAIRE **** */
+    /* ******************** */
     .form input,
     .form select,
     .form textarea {

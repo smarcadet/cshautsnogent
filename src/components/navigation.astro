@@ -35,7 +35,7 @@ function isActiveLink(
 <nav class="w-full navigation">
   <div class:list={[
     "grid grid-cols-[1fr_auto_1fr] before:inset-0 before:block before:-z-1 before:h-28 items-center before:absolute",
-    isHome ? "before:bg-black/40" : "before:bg-black/80"]}>
+    isHome ? "before:bg-black/40" : "before:bg-black/80 before:shadow-lg before:shadow-black/40"]}>
     <ul class="flex justify-end gap-6 mb-9">
       {
         leftLinks.map((link) => {
@@ -64,7 +64,7 @@ function isActiveLink(
       }
     </ul>
 
-    <a href={baseUrl} aria-label="Retour à l'accueil" aria-describedby="tooltip-accueil" class="flex justify-center py-0.5 px-2.5 bg-white rounded-xl mx-6 mt-4 tooltip-container shadow-xl">
+    <a href={baseUrl} aria-label="Retour à l'accueil" aria-describedby="tooltip-accueil" class="flex justify-center py-0.5 px-2.5 bg-white rounded-xl mx-6 mt-4 tooltip-container shadow-lg shadow-black/20">
         <Image src={logo} alt="Logo du Conseil Syndical des Hauts de Nogent" class="w-30" loading="eager" />
 
         <div role="tooltip" class="tooltip bottomleft">

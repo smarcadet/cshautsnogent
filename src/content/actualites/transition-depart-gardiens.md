@@ -1,6 +1,6 @@
 ---
 title: "Prévoir le départ des gardiens : les chantiers de la transition sont lancés"
-date: 2026-10-01
+date: 2026-10-02
 published: true
 image: "/images/gardienne.webp"
 excerpt: "Le départ des gardiens constitue une étape importante dans la vie de la copropriété. Au-delà des indemnités de départ qui ont dû être financées par la copropriété, cette évolution entraîne une réorganisation profonde de nombreux services autrefois assurés quotidiennement sur place. Afin de garantir la continuité du service et de préserver la qualité de vie au sein de la résidence, plusieurs actions doivent être engagées rapidement dans les prochains mois."

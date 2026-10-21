@@ -1,6 +1,6 @@
 ---
 title: "Compteurs d'eau bloqués : un sujet qui concerne l'ensemble des copropriétaires"
-date: 2026-10-01
+date: 2026-10-05
 published: true
 image: "/images/compteur-eau.webp"
 excerpt: "Le Conseil Syndical a été informé de la présence de plusieurs compteurs d'eau défectueux au sein de la résidence, principalement concernant l'eau chaude. D'après les informations dont nous disposons, certains de ces compteurs seraient bloqués depuis plusieurs années sans avoir été remplacés."
