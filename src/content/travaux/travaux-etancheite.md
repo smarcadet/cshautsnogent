@@ -1,6 +1,6 @@
 ---
 title: "Travaux d'étanchéité des balcons : une situation qui stagne"
-date: 2026-10-14
+date: 2026-10-15
 published: true
 excerpt: "Votés depuis de nombreux mois, les travaux de réfection de l'étanchéité de plusieurs balcons de la résidence demeurent à l'arrêt. Malgré l'urgence de certaines situations, les copropriétaires concernés sont toujours dans l'attente d'une intervention, sans calendrier ni visibilité sur la suite du dossier. Le Conseil Syndical déplore ce manque de suivi de la part de Cytia et l'absence d'informations communiquées par le syndic."
 status: travaux

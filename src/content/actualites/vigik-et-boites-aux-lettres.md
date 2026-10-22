@@ -1,6 +1,6 @@
 ---
 title: "Vigik, interphones et boîtes aux lettres : quels impacts pour notre résidence ?"
-date: 2026-09-15
+date: 2026-09-12
 published: true
 image: "/images/vigik.webp"
 excerpt: L'installation prochaine de boîtes aux lettres normalisées et d'un système Vigik constitue une évolution importante pour la copropriété. Si ces équipements apportent des avantages en matière de distribution du courrier et de sécurité, leur mise en œuvre dans une résidence équipée d'interphones et de portes d'accès anciens nécessite plusieurs vérifications techniques et peut entraîner des travaux complémentaires.
@@ -8,11 +8,11 @@ excerpt: L'installation prochaine de boîtes aux lettres normalisées et d'un sy
 
 ## Pourquoi installer un système Vigik ?
 
-Le départ des gardiens impose de repenser l'accès aux halls d'immeuble pour les différents intervenants extérieurs.
+Le départ de nos gardiens, qu'ils soient remplacés ou non, impose de repenser l'accès aux halls d'immeuble pour les différents intervenants extérieurs. La distribution du courrier ne faisant plus partie des nouveaux contrat de gardiennage, nous devons donc quoiqu'il arrive nous préoccuper rapidement de ce sujet.
 
 Le système Vigik permet à certains professionnels autorisés, notamment les facteurs, d'accéder aux parties communes grâce à un badge sécurisé, sans avoir à sonner chez un résident. Cette technologie, développée à l'origine par La Poste, est aujourd'hui largement utilisée dans les immeubles collectifs.
 
-Pour notre résidence, son installation est directement liée au projet de remplacement des boîtes aux lettres et à la nécessité de permettre la distribution du courrier malgré l'absence future de gardiens.
+Pour notre résidence, son installation est directement liée au projet d'installation des boîtes aux lettres et à la nécessité de permettre la distribution du courrier suite aux départ des gardiens actuels.
 
 ## Quel impact sur nos interphones et nos portes d'entrée ?
 
@@ -38,10 +38,10 @@ Les technologies actuelles offrent notamment :
 
 - une meilleure fiabilité ;
 - une gestion simplifiée des badges ;
-- une sécurité renforcée ;
+- une sécurité renforcée contre les intrusions ;
 - une meilleure résistance aux tentatives de copie ou de fraude.
 
-Il faut également noter que le système Vigik historique est progressivement remplacé par le nouveau standard Vigik+, qui deviendra la référence dans les années à venir.
+Il faut également noter que le système Vigik historique est progressivement remplacé par le nouveau standard Vigik+, qui deviendra la référence dans les années à venir. Nous allons faire en sorte d'installer la nouvelle génération directement si possible, pour nous éviter une évolution future des équipements et un coût supplémentaire.
 
 ## Quelles sont les règles pour les boîtes aux lettres ?
 
@@ -58,6 +58,8 @@ Concrètement, les boîtes doivent notamment :
 
 Les dimensions et les caractéristiques techniques des boîtes sont également encadrées afin de permettre la distribution des formats de courrier actuels et de garantir des conditions de travail satisfaisantes pour les agents de La Poste.
 
+Des devis sont actuellement en cours d'étude par le conseil syndical et le syndic.
+
 ## Un projet plus vaste qu'il n'y paraît
 
 Si l'installation de boîtes aux lettres et d'un système Vigik peut sembler être un simple projet d'équipement, ses conséquences sont en réalité beaucoup plus larges.
@@ -73,4 +75,4 @@ Elle implique potentiellement :
 
 Ces différents sujets devront être étudiés avec attention afin de choisir les solutions les plus adaptées à notre résidence tout en maîtrisant les coûts pour les copropriétaires.
 
-Le Conseil Syndical continuera à suivre ce dossier et à informer régulièrement les résidents de l'avancement des études techniques et des décisions qui seront proposées lors des prochaines assemblées générales.
+Le Conseil Syndical continuera à suivre ce dossier et à informer régulièrement les résidents de l'avancement des études techniques et des décisions qui seront proposées lors de la prochaine assemblée générale.

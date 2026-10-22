@@ -23,14 +23,14 @@ Parmi les principaux sujets identifiés figurent notamment :
 - l'installation de nouvelles boîtes aux lettres répondant aux exigences actuelles de distribution du courrier ;
 - la mise en place d'un système Vigik permettant au facteur d'accéder aux halls d'immeuble ;
 - la condamnation des vide-ordures, dont l'entretien quotidien ne pourra plus être assuré dans les mêmes conditions qu'aujourd'hui ;
-- la réorganisation de la gestion des déchets avec l'installation de conteneurs adaptés ;
-- le percement d'un accès direct vers le parking au niveau du bâtiment 147 afin d'accueillir des équipements de collecte de plus grande capacité ;
-- la définition des nouvelles prestations de nettoyage, d'entretien des espaces verts et de gestion des déchets.
+- la réorganisation de la gestion des déchets avec l'installation de conteneurs adaptés pour le bâtiment du 147 ;
+- Un éventuel percement d'un accès direct vers le parking au niveau du bâtiment 147 afin d'accueillir des équipements de collecte de plus grande capacité (à étudier suivant faisabilité) ;
+- la définition des nouvelles prestations de nettoyage, d'entretien des espaces verts et de gestion des conteneurs.
 Préparer l'avenir de la loge
 
 ## Le départ des gardiens pose également la question du devenir de la loge.
 
-Pour permettre sa valorisation future, plusieurs démarches devront être engagées, notamment :
+La loge ne faisant pas partie des lot présent dans le règlement de copropriété, pour permettre sa valorisation future, plusieurs démarches devront être engagées, notamment :
 
 - l'intervention d'un géomètre afin de mettre à jour les documents de la copropriété ;
 - la modification éventuelle de l'état descriptif de division ;
@@ -39,12 +39,13 @@ Pour permettre sa valorisation future, plusieurs démarches devront être engag�
 - l'intervention d'un notaire pour sécuriser l'ensemble de ces modifications.
 
 Ces opérations nécessitent du temps, des études préalables et des décisions collectives qu'il convient d'anticiper.
+Le coût sera assez conséquent, mais sera récupérer largement par la vente de la loge.
 
 ## Ne pas attendre le dernier moment
 
 Reporter ces décisions après le départ effectif des gardiens exposerait la résidence à une période d'incertitude et pourrait retarder la mise en œuvre des solutions nécessaires au bon fonctionnement de la copropriété.
 
-La tenue d'une Assemblée Générale avant la fin de l'année permettrait au contraire de prendre les décisions utiles en toute transparence, de planifier les travaux et prestations nécessaires et d'aborder cette transition dans les meilleures conditions.
+La tenue d'une Assemblée Générale avant la fin de l'année permettrait au contraire de prendre les décisions utiles en toute transparence, de planifier les travaux et prestations nécessaires et d'aborder cette transition (si transition il y a) dans les meilleures conditions.
 
 Le Conseil Syndical souhaite donc que ces différents sujets puissent être étudiés et débattus collectivement dans les meilleurs délais afin de permettre aux copropriétaires de se prononcer de manière éclairée sur l'avenir de notre résidence.
 
@@ -53,5 +54,5 @@ Le Conseil Syndical souhaite donc que ces différents sujets puissent être étu
 - Mise en place du système Vigik
 - Installation des boîtes aux lettres
 - Fermeture définitive des vide-ordures
-- Création de la porte vers le parking
+- Motion d'information : création de la porte vers le parking
 - L'intégration de la loge dans la copropriété / vente de la loge

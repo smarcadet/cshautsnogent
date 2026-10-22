@@ -6,6 +6,11 @@ image: "/images/compteur-eau.webp"
 excerpt: "Le Conseil Syndical a été informé de la présence de plusieurs compteurs d'eau défectueux au sein de la résidence, principalement concernant l'eau chaude. D'après les informations dont nous disposons, certains de ces compteurs seraient bloqués depuis plusieurs années sans avoir été remplacés."
 ---
 
+## Mise à jour suite au passage de madame Federo du 21/10 :
+Le syndic va prendre ce sujet et va mandater des sociétés de confiance pour maîtriser au mieux les coûts.  
+**Contrainte forte** : les copropriétaires dont les compteurs sont bloqués devront être présent pour laisser le passage à la société en charge du remplacement.
+
+## Constat
 Il est important de rappeler que ces compteurs sont installés à l'intérieur des appartements. Ils se trouvent donc en partie privative, même s'ils participent au système de répartition des consommations de la copropriété.
 
 Lorsqu'un compteur est bloqué, la consommation réelle du logement ne peut plus être mesurée. Dans ce cas, la société chargée de la répartition des consommations applique généralement une consommation forfaitaire afin de pouvoir établir les décomptes.
