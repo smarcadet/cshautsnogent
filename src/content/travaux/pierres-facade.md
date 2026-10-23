@@ -2,7 +2,7 @@
 title: "Déjointoiement des pierres de façade : un dossier suivi de près"
 date: 2026-10-11
 published: true
-excerpt: "Plusieurs zones de façade présentent aujourd'hui des signes de dégradation au niveau des joints entre les pierres de façade. Même si aucun risque structurel n'a été identifié à ce stade, la situation nécessite une intervention rapide afin d'éviter toute aggravation et de garantir la sécurité des résidents et des passants."
+excerpt: "Plusieurs zones de façade du 2/2bis présentent aujourd'hui des signes de dégradation au niveau des joints entre les pierres de façade. Même si aucun risque structurel n'a été identifié à ce stade, la situation nécessite une intervention rapide afin d'éviter toute aggravation et de garantir la sécurité des résidents et des passants."
 status: sujet
 blocked: false
 showProgress: true

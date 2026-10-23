@@ -431,4 +431,29 @@
         height: 10px;
         background-color: var(--accent-light);
     }
+
+    /* ************************** */
+    /* **** BACKLINK ARTICLE **** */
+    /* ************************** */
+    .backlink-article {
+        display: block;
+        padding-left: 25px;
+        border-left: 3px solid var(--accent-light);
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            inset-block: 0;
+            inset-inline-start: 0;
+            width: 0; 
+            height: 0; 
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            
+            border-left: 16px solid color-mix(in srgb, var(--accent-light) 70%, white);
+        }
+    }
 }

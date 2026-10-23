@@ -29,6 +29,9 @@ La complexité de notre dossier l'a manifestement surprise puisqu'elle a évoqu�
 
 Bonne nouvelle néanmoins, Madame Federo nous a confirmé sa volonté d'organiser une Assemblée Générale avant le 1er décembre.
 
+<span class="backlink-article">Voir notre aritcle sur ce sujet : <br>
+[Une Assemblée Générale indispensable avant le départ des gardiens](/cshautsnogent/actualites/ag-depart-gardiens)</span>
+
 Cette échéance reste toutefois conditionnée à un prérequis incontournable : la clôture des comptes de la copropriété.
 
 Or, à ce jour, ces comptes n'ont toujours pas été transmis au Conseil Syndical pour que nous puissions les contrôler.  
@@ -54,6 +57,9 @@ Ce sujet devrait donc être inscrit à l'ordre du jour de la prochaine Assemblé
 
 Le projet consistant à créer une ouverture entre le bâtiment 147 et le parking a également été évoqué.
 
+<span class="backlink-article">Lire un aritcle qui traite de ce sujet : <br>
+[La résidence se prépare à accueillir un architecte pour plusieurs expertises techniques](/cshautsnogent/actualites/visite-architecte)</span>
+
 Pour la gestionnaire, plusieurs obstacles importants apparaissent :
 
 - l'ouverture déboucherait sur une place de stationnement existante ;
@@ -67,6 +73,9 @@ Une solution alternative a été évoquée consistant à transformer l'actuel lo
 
 Le Conseil Syndical a particulièrement insisté sur l'urgence du dossier des boîtes aux lettres et du système Vigik.
 
+<span class="backlink-article">Voir notre aritcle sur ce sujet : <br>
+[Vigik, interphones et boîtes aux lettres : quels impacts pour notre résidence ?](/cshautsnogent/actualites/vigik-et-boites-aux-lettres)</span>
+
 À partir du départ des gardiens, prévu début 2027, le mode actuel de distribution du courrier ne sera plus viable. Or les adaptations nécessaires sont encore loin d'être engagées.
 
 Madame Federo a reconnu l'urgence de la situation mais n'a pas été en mesure de proposer une solution de transition si l'installation n'est pas faite à temps.
@@ -78,6 +87,9 @@ Le sujet devra impérativement faire partie des prochaines décisions de la copr
 Le dossier de l'étanchéité des balcons a également été abordé.
 
 Madame Federo nous a indiqué ne pas comprendre pourquoi les travaux votés ne sont toujours pas lancés.
+
+<span class="backlink-article">Voir notre aritcle sur ce sujet : <br>
+[Travaux d'étanchéité des balcons : une situation qui stagne](/cshautsnogent/suivi-des-travaux/travaux-etancheite)</span>
 
 Elle s'est dite particulièrement surprise d'apprendre qu'une entreprise non retenue lors du vote avait commencé une intervention sans information préalable du Conseil Syndial.
 
@@ -109,6 +121,9 @@ La complexité du dossier semble avoir été pleinement découverte à cette occ
 ## Compteurs d'eau bloqués : une prise de conscience progressive
 
 Autre sujet qui a nécessité des explications détaillées : celui des compteurs d'eau bloqués.
+
+<span class="backlink-article">Voir notre aritcle sur ce sujet : <br>
+[Compteurs d'eau bloqués : un sujet qui concerne l'ensemble des copropriétaires](/cshautsnogent/actualites/compteurs-eau-bloques)</span>
 
 Pensant dans un premier temps qu'il s'agissait d'un dossier relativement simple pensant les compteurs dans les cages d'esacliers, Madame Federo a découvert que les compteurs concernés se trouvent dans les appartements eux-mêmes et nécessiteront donc l'intervention coordonnée des copropriétaires concernés.
 
