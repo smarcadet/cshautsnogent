@@ -64,7 +64,7 @@ const currentWork = travaux
 				<div class="flex flex-wrap gap-5">
 				{
 					dernieresActus.map((article) => (
-					<article class="rounded-lg overflow-hidden mb-4 border-(--secondary) border-2 flex-1 first-of-type:basis-full [&>p]:line-clamp-4 [&:first-of-type>p]:line-clamp-none [&:first-of-type>img]:max-h-80">
+					<article class="rounded-lg overflow-hidden mb-4 border-(--secondary) border-2 flex-1 first-of-type:basis-full [&_p]:line-clamp-4 [&:first-of-type_p]:line-clamp-none [&:first-of-type>img]:max-h-80">
 						<img
 							src={`${baseUrl}${article.data.image ?? "/images/default-article.webp"}`}
 							alt=""
