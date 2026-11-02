@@ -3,7 +3,7 @@ title: "Gaz et chauffage : des économies attendues pour notre copropriété"
 date: 2026-10-30
 published: true
 image: "/images/chauffage.webp"
-excerpt: "Le conseil syndical suit les dépenses de la résidence afin d’identifier les économies possibles sans dégrader le confort des occupants. En cette fin d'octobre, ce sujet est plus que brulant. Deux évolutions importantes devraient nous permettre de réduire nos dépenses de chauffage : un contrat de gaz plus avantageux et le remplacement récent de notre chaudière collective."
+excerpt: "Le conseil syndical suit les dépenses de la résidence afin d’identifier les économies possibles sans dégrader le confort des occupants. En cette fin d'octobre, ce sujet est plus que brûlant. Deux évolutions importantes devraient nous permettre de réduire nos dépenses de chauffage : un contrat de gaz plus avantageux et le remplacement récent de notre chaudière collective."
 ---
 
 ## Un prix du gaz en baisse de près de 16 %
